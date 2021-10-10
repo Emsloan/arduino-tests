@@ -1,0 +1,120 @@
+#include <iostream>
+#include <cmath>
+#include <ctime>
+#include <cstdlib>
+#include <iomanip>
+
+using namespace std;
+using std::setw;
+
+// defining constants
+
+#define LENGTH 11
+#define WIDTH  4
+
+// defining enumerations
+enum color { red, green, blue } c;
+
+
+// declaring functions
+int calcArea();
+int min(int num1, int num2 = 1);
+void forRandomNumber();
+void printArray(int arrOfInts[]);
+
+// declare a variable
+int area;
+
+// declaring different variable types
+// number definition:
+   short  s = 20;
+   int    i = -11;
+   long   l = 22222;
+   float  f = 111.11;
+   double d = 222.222;
+
+// declare an array with 5 values
+int arr[ 5 ];
+
+
+// main() is where program execution begins.
+int main() {
+    
+    // instantiate enumerated variable
+    c = red; 
+    
+    cout << "Area : " << calcArea() << endl;
+    cout << endl;
+    
+    cout << "Minimum value : " << min(5,3) << endl;
+    // test default value in parameter
+    cout << "Minimum value : " << min(3) << endl;
+    
+    cout << endl;
+
+    // test math operators
+    cout << "Testing Math Operators" << endl;
+    cout << "sin(d) :" << sin(d) << endl;
+    cout << "abs(i)  :" << abs(i) << endl;
+    cout << "floor(d) :" << floor(d) << endl;
+    cout << "sqrt(f) :" << sqrt(f) << endl;
+    cout << "pow( d, 2) :" << pow(d, 2) << endl;
+    
+    // test for loop in a method
+    cout << endl;
+    forRandomNumber();
+    
+    // initialize array to random
+   for ( int i = 0; i < 5; i++ ) {
+      arr[ i ] = rand();
+   }
+   
+   // print array
+   cout << endl;
+   cout << "Testing Array Printing" << endl;
+   printArray(arr);
+ 
+    cout << endl;
+    cout << "End C++ Test"; 
+    return 0;
+}
+
+// function definition can happen after main()
+
+int calcArea() {
+   area = LENGTH * WIDTH;
+   return area;
+}
+
+// return minimum of 2 values
+int min(int num1, int num2) {
+   // local variable declaration
+   int result;
+ 
+   if (num1 < num2)
+      result = num1;
+   else
+      result = num2;
+ 
+   return result; 
+}
+
+void forRandomNumber() {
+    
+    int j;
+    /* generate 3 random numbers. */
+   for( i = 0; i < 3; i++ ) {
+      j = rand();
+      cout << "Testing forRandomNumber() : " << j << endl;
+   }
+   
+}// end  method
+   
+   
+void printArray(int arrayOfInts[]) {
+    for ( int j = 0; j < 5; j++ ) {
+      cout << setw( 5 )<< j << setw( 15 ) << arrayOfInts[ j ] << endl;
+   }
+}
+    
+
