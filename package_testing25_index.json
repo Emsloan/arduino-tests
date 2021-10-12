@@ -1,0 +1,15 @@
+{
+	"packages": [
+		{
+			"name": "TestboardTeam25",
+			"maintainer": "Team 25",
+			"websiteURL": "https://github.com/Emsloan/arduino-tests",
+			"email": "pduncans@asu.edu",
+			"help": {
+				"online": "https://github.com/Emsloan/arduino-tests"
+			},
+			"platforms": [],
+			"tools": []
+		}
+	]
+}
