@@ -16,14 +16,14 @@ int LED = 20;
 
 void setup() {
   // Initialize digital LED pin 20
-    pinMode(20, OUTPUT);
+    pinMode(LED, OUTPUT);
 }
 
 
 void loop() {
   // Loop for blinking the LED off and on
-  digitalWrite(20, HIGH);   
-  delay(5000);              
-  digitalWrite(20, LOW); 
-  delay(1000);           
+  digitalWrite(LED, HIGH);   
+  delay(10000);              
+  digitalWrite(LED, LOW); 
+  delay(100);           
 }
