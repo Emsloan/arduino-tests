@@ -21,7 +21,11 @@
 					"archiveFileName": "core-ArduinoCore-megaavr-1.8.7.tar.bz2",
 					"checksum": "SHA-256:24853e59bfcfcfa09d7ab51011b65f2246e082228b1f14fdaa4cbb2c6aae23b4",
 					"size": "875098",
-					"boards": [],
+					"boards": [
+						{
+							"name": "Team 25 nano every"
+						}
+					],
 					"toolsDependencies": [
 						{
 							"packager": "arduino",
