@@ -1,29 +1,30 @@
 /*
-  Sketch to blink the LED for 5 seconds on and 1 second off using 
+  Sketch to verify that the serial monitor is functioning properly on  
   the AVR128DA48 arduino board.
   
   @author Paul Duncanson 
   @version 1.0
-  @date 10/07/2021
+  @date 10/18/2021
 */
 
-// LED is attached to pin 20 
-// Must use the pin number because no bootloader was used to upload 
-// the sketch.  A bootloader is needed to set the LED_BUILTIN pin 
-// number
 
-int LED = 20;
+int LED = 20; //built in LED is on pin
+int timer = 100;
 
 void setup() {
   // Initialize digital LED pin 20
     pinMode(LED, OUTPUT);
+    Serial.begin(9600);
 }
 
 
 void loop() {
-  // Loop for blinking the LED off and on
-  digitalWrite(LED, HIGH);   
-  delay(10000);              
-  digitalWrite(LED, LOW); 
-  delay(100);           
+  digitalWrite(LED, LOW);
+  delay(timer);
+  digitalWrite(LED, HIGH);
+  delay(timer);
+  
+  Serial.println("testing");
+  
+
 }
