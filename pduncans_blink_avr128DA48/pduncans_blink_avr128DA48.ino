@@ -9,7 +9,7 @@
 
 
 int LED = 20; //built in LED is on pin
-int timer = 100;
+int timer = 3000;
 
 void setup() {
   // Initialize digital LED pin 20
