@@ -1,0 +1,4 @@
+Preliminary searching shows two possible locations for setting default programmer, programmer.txt and preferences.txt. 
+
+Comparison to DxCore shows that a default programmer isn't selected either. Arduino does have a default programmer and it seems to be selected in preferences.txt.
+
