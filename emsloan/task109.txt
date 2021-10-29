@@ -2,3 +2,9 @@ Preliminary searching shows two possible locations for setting default programme
 
 Comparison to DxCore shows that a default programmer isn't selected either. Arduino does have a default programmer and it seems to be selected in preferences.txt.
 
+Reading https://arduino.github.io/arduino-cli/0.19/platform-specification/#programmerstxt for research. The name of the programmer might be the issue? Will look into: 
+
+"Upload Using Programmer by default¶
+If the upload.protocol property is not defined for a board, the Arduino IDE's "Upload" process will use the same behavior as "Upload Using Programmer". This is convenient for boards which only support uploading via programmer."
+
+as per platform specification.
