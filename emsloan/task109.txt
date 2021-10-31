@@ -7,4 +7,4 @@ Reading https://arduino.github.io/arduino-cli/0.19/platform-specification/#progr
 "Upload Using Programmer by default¶
 If the upload.protocol property is not defined for a board, the Arduino IDE's "Upload" process will use the same behavior as "Upload Using Programmer". This is convenient for boards which only support uploading via programmer."
 
-as per platform specification.
+I think that the issue with the default programmer being selected is the different boardID variable in boards.txt and programmers.txt. In the arduino core the boardid in boards.txt and programmers.txt is "uno". In our core, the boardid in boards.txt is "avrda" but in programmers.txt its "nedbg". I'm not sure what the reprecussions of changing that name is, so that will be wht I test next. 
