@@ -24,3 +24,26 @@ means that testing a new package should be done on a "clean" version of the IDE.
 	![Alt text](before.png "Before")
 	### After:
 	![Alt text](after.png "After")
+	
+&nbsp;
+# Section xx: How to add a new Package
+The IDE requires adding URLs pointing to JSON formatted files to install new core packages.  The structure of these 
+JSONs is specified by the IDE and will point to necessary tools and information to allow for new boards to 
+interact with the IDE.  Please see section xx in this document for more information about creating a JSON file.
+&nbsp;
+### Setting up a JSON file in the IDE
+1. Click "File" menu and select the "Preferences" option.
+ ![Alt text](preferences.png "Preferences")
+2. In the Preferences menu, click the button to the far right of the "Additional Boards Manager URL" option.
+ ![Alt text](prefMenu.png "After")
+3. Setting up a new JSON requires adding the URL to the next line in the "Additional Boards Manager".
+![Alt text](addJSON.png "Add JSON")
+&nbsp;
+### Installing the Package
+4. Click "Tools" menu and select "Board" followed by "Boards Manager". 
+![Alt text](boardsMan.png "Boards Manager")
+5. The boards manager will update the package options with the new package. 
+6. Find the added package and select "Install".
+![Alt text](installPack.png "Install Board")
+7. Installed package will be available under the "Tools" - "Boards" menu.
+![Alt text](addedBoard.png "Board Added")
