@@ -12,7 +12,7 @@ means that testing a new package should be done on a "clean" version of the IDE.
 	- On most Windows machines AppData will be a hidden folder, to show
 	  the folder select folder options and click "Show hidden files, folders, and drives" under the
 	  "Hidden files and folders" section.		
-		![Alt text](hiddenFolder.png "Hidden Folder")
+	   ![Alt text](hiddenFolder.png "Hidden Folder")
 		
 3. Delete the Arduino15 folder.
 	![Alt text](arduino15.png "Folder location")
@@ -33,9 +33,9 @@ interact with the IDE.  Please see section xx in this document for more informat
 &nbsp;
 ### Setting up a JSON file in the IDE
 1. Click "File" menu and select the "Preferences" option.
- ![Alt text](preferences.png "Preferences")
+![Alt text](preferences.png "Preferences")
 2. In the Preferences menu, click the button to the far right of the "Additional Boards Manager URL" option.
- ![Alt text](prefMenu.png "After")
+![Alt text](prefMenu.png "After")
 3. Setting up a new JSON requires adding the URL to the next line in the "Additional Boards Manager".
 ![Alt text](addJSON.png "Add JSON")
 &nbsp;
