@@ -47,3 +47,22 @@ interact with the IDE.  Please see section xx in this document for more informat
 ![Alt text](installPack.png "Install Board")
 7. Installed package will be available under the "Tools" - "Boards" menu.
 ![Alt text](addedBoard.png "Board Added")
+
+&nbsp;
+# Section xx: How to test a core package within the IDE
+Testing out a new core package can be difficult when every change requires updating the JSON file.  These changes 
+require the SHA-256 key to be updated everytime.  The IDE will not pull the package's zip file if
+the SHA-256 code does not match the zip file's source.  This means that testing changes made in a package 
+is easier to conduct in an already installed package.
+
+&nbsp;
+### Modifying and testing a core package
+1. The "Arduino15" folder contains the folders and files that make a core package.
+![Alt text](a15Folder.png "Arduino15 Folder")
+2. Select the desired package from the "Packages" folder.
+![Alt text](package.png "Package")
+3. Make updates to desired files in the package and save.
+4. Restart the IDE.
+5. The IDE will reinitialize installed packages. 
+![Alt text](restart.png "Restart IDE")
+6. Updated package will now be in use.
