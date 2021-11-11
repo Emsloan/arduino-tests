@@ -66,3 +66,22 @@ is easier to conduct in an already installed package.
 5. The IDE will reinitialize installed packages. 
 ![Alt text](restart.png "Restart IDE")
 6. Updated package will now be in use.
+
+
+&nbsp;
+# Section xx: How to setup the SHA-256 key
+A Secure Hash Algorithm (SHA) is a hashing function that can be used for validation purposes.  The Arduino
+IDE uses the SHA-256 standard as a method of varifying Arduino core packages.  This verification process is
+necessary to install new packages.  Package owners generate a unique SHA-256 key from their core repository
+and must add this key to the JSON file.  
+1. The "checksum" section of the JSON contains the unique SHA-256 key.
+![Alt text](jsonSha.png "SHA-256 JSON")
+2. The SHA-256 key can be generated online here: 
+	- https://hash.online-convert.com/sha256-generator
+3. Add a link to the repo's URL and click "Convert file".
+![Alt text](shaWebsite.png "SHA-256 Website")
+4. Copy the "hex:" value into the "checksum" section of the JSON 
+![Alt text](hexSha.png "SHA-256 hex")
+5. The SHA-256 key must be updated everytime the package repository is changed.
+6. If the checksum key doesn't match the zipped package signature, the IDE will throw an error.
+![Alt text](shaError.png "SHA-256 IDE Error")
