@@ -12,7 +12,7 @@ means that testing a new package should be done on a "clean" version of the IDE.
 	- On most Windows machines AppData will be a hidden folder, to show
 	  the folder select folder options and click "Show hidden files, folders, and drives" under the
 	  "Hidden files and folders" section.		
-		![Alt text](hiddenFolder.png "Hidden Folder")
+	   ![Alt text](hiddenFolder.png "Hidden Folder")
 		
 3. Delete the Arduino15 folder.
 	![Alt text](arduino15.png "Folder location")
@@ -24,3 +24,64 @@ means that testing a new package should be done on a "clean" version of the IDE.
 	![Alt text](before.png "Before")
 	### After:
 	![Alt text](after.png "After")
+	
+&nbsp;
+# Section xx: How to add a new Package
+The IDE requires adding URLs pointing to JSON formatted files to install new core packages.  The structure of these 
+JSONs is specified by the IDE and will point to necessary tools and information to allow for new boards to 
+interact with the IDE.  Please see section xx in this document for more information about creating a JSON file.
+&nbsp;
+### Setting up a JSON file in the IDE
+1. Click "File" menu and select the "Preferences" option.
+![Alt text](preferences.png "Preferences")
+2. In the Preferences menu, click the button to the far right of the "Additional Boards Manager URL" option.
+![Alt text](prefMenu.png "After")
+3. Setting up a new JSON requires adding the URL to the next line in the "Additional Boards Manager".
+![Alt text](addJSON.png "Add JSON")
+&nbsp;
+### Installing the Package
+4. Click "Tools" menu and select "Board" followed by "Boards Manager". 
+![Alt text](boardsMan.png "Boards Manager")
+5. The boards manager will update the package options with the new package. 
+6. Find the added package and select "Install".
+![Alt text](installPack.png "Install Board")
+7. Installed package will be available under the "Tools" - "Boards" menu.
+![Alt text](addedBoard.png "Board Added")
+
+&nbsp;
+# Section xx: How to test a core package within the IDE
+Testing out a new core package can be difficult when every change requires updating the JSON file.  These changes 
+require the SHA-256 key to be updated everytime.  The IDE will not pull the package's zip file if
+the SHA-256 code does not match the zip file's source.  This means that testing changes made in a package 
+is easier to conduct in an already installed package.
+
+&nbsp;
+### Modifying and testing a core package
+1. The "Arduino15" folder contains the folders and files that make a core package.
+![Alt text](a15Folder.png "Arduino15 Folder")
+2. Select the desired package from the "Packages" folder.
+![Alt text](package.png "Package")
+3. Make updates to desired files in the package and save.
+4. Restart the IDE.
+5. The IDE will reinitialize installed packages. 
+![Alt text](restart.png "Restart IDE")
+6. Updated package will now be in use.
+
+
+&nbsp;
+# Section xx: How to setup the SHA-256 key
+A Secure Hash Algorithm (SHA) is a hashing function that can be used for validation purposes.  The Arduino
+IDE uses the SHA-256 standard as a method of varifying Arduino core packages.  This verification process is
+necessary to install new packages.  Package owners generate a unique SHA-256 key from their core repository
+and must add this key to the JSON file.  
+1. The "checksum" section of the JSON contains the unique SHA-256 key.
+![Alt text](jsonSha.png "SHA-256 JSON")
+2. The SHA-256 key can be generated online here: 
+	- https://hash.online-convert.com/sha256-generator
+3. Add a link to the repo's URL and click "Convert file".
+![Alt text](shaWebsite.png "SHA-256 Website")
+4. Copy the "hex:" value into the "checksum" section of the JSON 
+![Alt text](hexSha.png "SHA-256 hex")
+5. The SHA-256 key must be updated everytime the package repository is changed.
+6. If the checksum key doesn't match the zipped package signature, the IDE will throw an error.
+![Alt text](shaError.png "SHA-256 IDE Error")
