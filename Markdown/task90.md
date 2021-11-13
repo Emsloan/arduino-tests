@@ -1,5 +1,20 @@
-# JSON Creation
-## _The Last Markdown Editor, Ever_
+# How to create the JSON Package Index
+
+## _Packages_
+
+The JSON file serves as a reference for the IDE to download organize the cores. The file is broken down into different nested categories. The highest level of these categories is **packages**. Each member within the packages level is its own standalone.
+
+```json
+{
+    "packages":[
+    {
+        core goes here
+    }
+    
+    ]
+    
+}
+```
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
