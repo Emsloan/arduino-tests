@@ -2,7 +2,7 @@
 
 ## _Packages_
 
-The JSON file serves as a reference for the IDE to download organize the cores. The file is broken down into different nested categories. The highest level of these categories is **packages**. Each member within the packages level is its own standalone.
+The JSON file serves as a reference for the IDE to download and organize the cores. The file is broken down into different nested categories. The highest level of these categories is **packages**. Each member within the packages level represents a standalone core.
 
 ```json
 {
@@ -16,6 +16,23 @@ The JSON file serves as a reference for the IDE to download organize the cores. 
 }
 ```
 
+The first part of a package concerns basic information and attribution like **name**, **maintainer**, **websiteURL**, contact **email**, and resources for **help**.
+
+```json
+{
+    "packages":[
+    {
+        "name": "Our Package",
+        "maintainer": "bbb",
+        "websiteURL": "http://bbb.com/",
+        "email": "aaa@bbb.com",
+        "help": {
+            "online": "http://bbb.com/
+            }
+    }
+    ]
+}
+```
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
