@@ -1,8 +1,8 @@
-# How to create the JSON Package Index
+# How to create the JSON Index File
 
-## _Packages_
+## Packages
 
-The JSON file serves as a reference for the IDE to download and organize the cores. The file is broken down into different nested categories. The highest level of these categories is **packages**. Each member within the packages level represents a standalone core.
+The JSON file allows for your platform to be installed and updated using the IDE's Boards Manager. The root level of the files consists of an array of **packages**.
 
 ```json
 {
@@ -16,14 +16,14 @@ The JSON file serves as a reference for the IDE to download and organize the cor
 }
 ```
 
-The first part of a package concerns basic information and attribution like **name**, **maintainer**, **websiteURL**, contact **email**, and resources for **help**.
+Each package has metadata objects that displays within the IDE Boards Manager. This includes **name** which is used to name the vendor/maintainer folder (the highest level of the hardware folders).  as well as attribution information like **maintainer**, **websiteURL** (where the core is hosted), contact **email**, and a  for user to get **help**.
 
 ```json
 {
     "packages":[
     {
-        "name": "Our Package",
-        "maintainer": "bbb",
+        "name": "My New Package",
+        "maintainer": "John Doe",
         "websiteURL": "http://bbb.com/",
         "email": "aaa@bbb.com",
         "help": {
@@ -33,6 +33,12 @@ The first part of a package concerns basic information and attribution like **na
     ]
 }
 ```
+
+## Platforms
+
+## Tools
+
+
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
