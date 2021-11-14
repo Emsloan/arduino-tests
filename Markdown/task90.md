@@ -16,7 +16,7 @@ The JSON file allows for your platform to be installed and updated using the IDE
 }
 ```
 
-Each package needs metadata that displays within the IDE Boards Manager. This includes **name** which is used to name the vendor/maintainer folder (the highest level of the hardware folders).  as well as attribution information like **maintainer**, **websiteURL** (where the core is hosted), contact **email**, and a  for user to get **help**.
+Each package has metadata objects that displays within the IDE Boards Manager. This includes **name** which is used to name the vendor/maintainer folder (the highest level of the hardware folders).  as well as attribution information like **maintainer**, **websiteURL** (where the core is hosted), contact **email**, and a  for user to get **help**.
 
 ```json
 {
