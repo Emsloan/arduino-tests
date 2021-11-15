@@ -84,7 +84,6 @@ The next element within the a package is **platforms**. Platforms contains:
           ]
         },
       ],
-    }
   ]
 }
 ```
