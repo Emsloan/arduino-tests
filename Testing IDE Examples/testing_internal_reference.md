@@ -1,4 +1,4 @@
-# Flash - internal_reference
+# Comparator - internal_reference
 
 ### Example Code
 ```
