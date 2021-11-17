@@ -1,5 +1,7 @@
 # How to create the JSON Index File
 
+TODO
+
 The JSON file allows for your platform to be installed and updated using the IDE's Boards Manager. The root level of the files consists of an array of **packages**.
 
 ```json
