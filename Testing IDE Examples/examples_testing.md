@@ -113,7 +113,7 @@ option enabled in File -> Preferences.
 
 ```
 
-### Possible Fixes
+### Ideas
 1. Add a declaration for "void stop()" in Comparator.h file.  It appears there is no declaration for this function.
 2. Find location of missing "AC_INTMODE_NORMAL_t" enum declaration or add a new one. 
 
@@ -260,7 +260,7 @@ exit status 1
 
 Error compiling for board AVR DA-series.
 ```
-### Possible Fixes
+### Ideas
 1. The error message points to the same missing type as the Comparator - Simple_comparator.  This type is not declared anywhere in our 
 core's package and doesn't appear in the original DxCore either.  It must be added or the example must be modified.
 
@@ -404,7 +404,7 @@ unsigned long eeprom_crc(void) {
 ### Result
 Code compiles correctly, but the serial monitor displays nothing.
 
-### Possible Fixes
+### Ideas
 1. Changing the "Serial" variable to "Serial1", which works in other sketches, has no effect on the serial monitor's output.   
 
 # EEPROM - eeprom_get
@@ -481,7 +481,7 @@ void loop() {
 ### Result
 Code compiles correctly, but the serial monitor displays nothing.
 
-### Possible Fixes
+### Ideas
 1. Changing the code to "Serial1" has no effect on the output of this example.  
 2. It appears that the serial monitor will only output data when a print function call is
 placed in the void loop() and the variable is set to "Serial1".   
@@ -506,3 +506,206 @@ void loop() {
   Serial1.println("Read float from EEPROM: "); //Adding this line and changing to "Serial1" will print to serial monitor
 }
 ```
+
+# EEPROM - Iteration
+### Sample Code
+```
+/* eeprom_iteration example.
+ *
+ * A set of example snippets highlighting the
+ * simplest methods for traversing the EEPROM.
+ *
+ * Running this sketch is not necessary, this is
+ * simply highlighting certain programming methods.
+ *
+ * Written by Christopher Andrews 2015
+ * Released under MIT licence.
+ */
+
+#include <EEPROM.h>
+
+void setup() {
+
+  /*
+   * Iterate the EEPROM using a for loop.
+   */
+
+  for (int index = 0 ; index < EEPROM.length() ; index++) {
+
+    //Add one to each cell in the EEPROM
+    EEPROM[ index ] += 1;
+  }
+
+  /*
+   * Iterate the EEPROM using a while loop.
+   */
+
+  int index = 0;
+
+  while (index < EEPROM.length()) {
+
+    //Add one to each cell in the EEPROM
+    EEPROM[ index ] += 1;
+    index++;
+  }
+
+  /*
+   * Iterate the EEPROM using a do-while loop.
+   */
+
+  int idx = 0;  //Used 'idx' to avoid name conflict with 'index' above.
+
+  do {
+
+    //Add one to each cell in the EEPROM
+    EEPROM[ idx ] += 1;
+    idx++;
+  } while (idx < EEPROM.length());
+
+
+} //End of setup function.
+
+void loop() {}
+```
+
+### Result
+Code compiles correctly and appears to function properly.
+
+# EEPROM - eeprom_put
+### Sample Code
+```
+/* eeprom_put example.
+ *
+ * This shows how to use the EEPROM.put() method.
+ * Also, this sketch will pre-set the EEPROM data for the
+ * example sketch eeprom_get.
+ *
+ * Note, unlike the single byte version EEPROM.write(),
+ * the put method will use update semantics. As in a byte
+ * will only be written to the EEPROM if the data is actually
+ * different in order to avoid unnecessary write/erase cycles.
+ *
+ * Written by Christopher Andrews 2015
+ * Released under MIT licence.
+ */
+
+#include <EEPROM.h>
+
+struct MyObject {
+  float field1;
+  byte field2;
+  char name[10];
+};
+
+void setup() {
+
+  Serial.begin(115200);
+
+  float f = 123.456f;  //Variable to store in EEPROM.
+  int eeAddress = 0;   //Location we want the data to be put.
+
+
+  // One simple call, with the address first and the object second.
+  EEPROM.put(eeAddress, f);
+
+  Serial.println("Written float data type!");
+
+  /* Put is designed for use with custom structures also. */
+
+  //Data to store.
+  MyObject customVar = {
+    3.14f,
+    65,
+    "Working!"
+  };
+
+  eeAddress += sizeof(float); //Move address to the next byte after float 'f'.
+
+  EEPROM.put(eeAddress, customVar);
+  Serial.print("Written custom data type! \n\nView the example sketch eeprom_get to see how you can retrieve the values!");
+}
+
+void loop() {
+  /* Empty loop */
+}
+```
+### Result
+Code compiles correctly, but the serial monitor displays nothing.
+
+### Ideas
+1. Serial1 works to print to the serial monitor but only if it is placed in the continuous loop.
+
+```
+void loop() {
+  /* Empty loop */
+  Serial1.println("Test");
+}
+```
+
+![Alt text](pics/serial_test.png "Testing serial")
+
+# EEPROM - eeprom_read
+
+### Sample Code
+```
+/* EEPROM Read
+ *
+ * Reads the value of each byte of the EEPROM and prints it
+ * to the computer.
+ * This example code is in the public domain.
+ */
+
+#include <EEPROM.h>
+
+// start reading from the first byte (address 0) of the EEPROM
+int address = 0;
+byte value;
+
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  // read a byte from the current address of the EEPROM
+  value = EEPROM.read(address);
+
+  Serial.print(address);
+  Serial.print("\t");
+  Serial.print(value, DEC);
+  Serial.println();
+
+  /*
+   * Iterate through each byte of the EEPROM storage.
+
+   * Larger AVR processors have larger EEPROM sizes, E.g:
+   * tinyAVR 0/1/2-series 2k flash:      64b
+   * tinyAVR 0/1/2-series 4-8k flash:    128b
+   * tinyAVR 0/1/2-series 16-32k flash:  256b
+   * megaAVR 0-series:                   256b (all flash sizes)
+   * DA, DB, EA-series:                  512b (all flash sizes)
+   * DD-series:                          256b (all flash sizes)
+
+   * Rather than hard-coding the length, you should use the pre-provided length function.
+   * This will make your code portable to all AVR processors.
+   */
+
+  address = address + 1;
+  if (address == EEPROM.length()) {
+    address = 0;
+  }
+
+  /*
+   * As the EEPROM sizes are powers of two, wrapping (preventing overflow) of an
+   * EEPROM address is also doable by a bitwise and of the length - 1.
+
+   * ++address &= EEPROM.length() - 1;
+   */
+
+  delay(500);
+}
+```
+### Result
+Code compiles correctly and output is printed to the serial monitor.  This occurs only when serial
+is set to 'Serial1'.
+
+![Alt text](pics/eeprom_read.png "EEPROM read")
