@@ -12,5 +12,7 @@
 | EEPROM - Iteration				| Yes		| None													|
 | EEPROM - eeprom_put				| Yes		| "Serial1" only prints in the "void loop()" function	|
 | EEPROM - eeprom_read				| Yes		| Must change "Serial" to "Serial1"						|
-
+| DxCore - EnhancedIODemo			| Yes		| None													|
+| DxCore - ModernRevSer				| Yes		| "Serial1" only prints in the "void loop()" function	|
+| DxCore - SAMPLENDemo				| Yes		| "Serial1" only prints in the "void loop()" function	|
 	
