@@ -77,6 +77,7 @@ void loop() {
   delay(100);
 }
 ```
+```
 /* EEPROM Write
  *
  * Stores values read from analog input 0 into the EEPROM.
@@ -140,7 +141,7 @@ void loop() {
 
 
 ```
-
+```
 
 Sketch uses 1082 bytes (0%) of program storage space. Maximum is 131072 bytes.
 Global variables use 6 bytes (0%) of dynamic memory, leaving 16378 bytes for local variables. Maximum is 16384 bytes.
