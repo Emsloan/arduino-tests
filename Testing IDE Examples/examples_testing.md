@@ -976,3 +976,585 @@ void loop() {
 ### Result
 Code compiles correctly and output is printed to the serial monitor.  This occurs only when 'Serial'
 is set to 'Serial1'.
+
+# Opamp - Inverting_amplifier
+
+### Sample code
+```
+/***********************************************************************|
+| AVR-DB Opamp library                                                  |
+|                                                                       |
+| Inverting_amplifier.ino                                               |
+|                                                                       |
+| A library for interfacing with the built-in AVR-DB Opamps             |
+| Developed in 2021 by MCUdude                                          |
+| https://github.com/MCUdude/                                           |
+|                                                                       |
+| In this example we use opamp 0 as an inverting amplifier with a gain  |
+| multiplier set by the built-in resistor ladder. Since the output      |
+| can't go below 0V, we center the output voltage around Vdd/2, which   |
+| is 5V if your supply voltage is 5V. This means that if 1.5V is        |
+| applied to PD3, PD2 will output 3.5V.                                 |
+|                                                                       |
+|                 | Gain   |  Wiper value  | R1  | R2  |                |
+|                 |--------|---------------|-----|-----|                |
+|                 | -0.067 | wiper::wiper0 | 60k | 4k  |                |
+|                 | -0.143 | wiper::wiper1 | 56k | 8k  |                |
+|                 | -0.334 | wiper::wiper2 | 48k | 16k |                |
+|                 | -1.00  | wiper::wiper3 | 32k | 32k |                |
+|                 | -1.667 | wiper::wiper4 | 24k | 40k |                |
+|                 | -3.00  | wiper::wiper5 | 16k | 48k |                |
+|                 | -7.00  | wiper::wiper6 | 8k  | 56k |                |
+|                 | -15.0  | wiper::wiper7 | 4k  | 60k |                |
+|                                                                       |
+|               ______           ______                                 |
+|      PD3 ----|__R1__|----+----|__R2__|----+                           |
+|                          |                |                           |
+|                          |    |\          |                           |
+|                          |    |  \        |                           |
+|                          +----| -  \      |                           |
+|                               |     |-----+----- PD2                  |
+|                     Vdd/2 ----| +  /                                  |
+|                               |  /                                    |
+|                               |/              Gain = - (R2 / R1)      |
+|                                                                       |
+|                                                                       |
+| See Microchip's application note TB3286 for more information.         |
+|***********************************************************************/
+
+#include <Opamp.h>
+
+void setup() {
+  // Configure opamp input pins
+  Opamp0.input_n = in_n::wiper;    // Connect negative input to the "middle" position of the resistor ladder
+  Opamp0.input_p = in_p::vdd_div2; // Connect positive input to Vdd/2 internally
+
+  // Configure resistor ladder
+  Opamp0.ladder_top = top::output;     // Connect the resistor ladder top to the opamp output
+  Opamp0.ladder_bottom = bottom::in_n; // Connect the resistor ladder bottom to the negative input pin, which is PD3
+  Opamp0.ladder_wiper = wiper::wiper3; // Set a gain of -1
+
+  // Enable opamp output
+  Opamp0.output = out::enable;
+
+  // Initialize Opamp0
+  Opamp0.init();
+
+  // Start the Opamp hardware
+  Opamp::start();
+}
+
+void loop() {
+
+}
+```
+
+### Result
+Code fails to compile.
+
+### Error Message
+```
+Arduino: 1.8.16 (Windows 10), Board: "AVR DA-series, AVR128DA48"
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\examples\Inverting_amplifier\Inverting_amplifier.ino: In function 'void setup()':
+
+Inverting_amplifier:46:3: error: 'Opamp0' was not declared in this scope
+
+   Opamp0.input_n = in_n::wiper;    // Connect negative input to the "middle" position of the resistor ladder
+
+   ^~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\examples\Inverting_amplifier\Inverting_amplifier.ino:46:3: note: suggested alternative: 'Opamp'
+
+   Opamp0.input_n = in_n::wiper;    // Connect negative input to the "middle" position of the resistor ladder
+
+   ^~~~~~
+
+   Opamp
+
+exit status 1
+
+'Opamp0' was not declared in this scope
+
+
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
+```
+### Ideas
+1. The Opamp0 variable is not being set in the library.  
+```
+// Pre-defined objects
+#if defined(OPAMP_OP0CTRLA)
+  Opamp Opamp0(PIN_PD1, PIN_PD2, PIN_PD3, 0, OPAMP_OP0CTRLA, OPAMP_OP0STATUS, OPAMP_OP0RESMUX, OPAMP_OP0INMUX, OPAMP_OP0SETTLE, OPAMP_OP0CAL);
+#endif
+#if defined(OPAMP_OP1CTRLA)
+  Opamp Opamp1(PIN_PD4, PIN_PD5, PIN_PD7, 1, OPAMP_OP1CTRLA, OPAMP_OP1STATUS, OPAMP_OP1RESMUX, OPAMP_OP1INMUX, OPAMP_OP1SETTLE, OPAMP_OP1CAL);
+#endif
+#if defined(OPAMP_OP2CTRLA)
+  Opamp Opamp2(PIN_PE1, PIN_PE2, PIN_PE3, 2, OPAMP_OP2CTRLA, OPAMP_OP2STATUS, OPAMP_OP2RESMUX, OPAMP_OP2INMUX, OPAMP_OP2SETTLE, OPAMP_OP2CAL);
+#endif
+```
+This code defines the Opamp variables if another variable, OPAMP_OPxCTRLA, has been defined and is not null.
+A search of the DxCore returns no definitions or declarations for any of these variables.
+```   
+Search "OPAMP_OP0CTRLA" (6 hits in 2 files of 465 searched)
+  C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\DxCore\keywords.txt (4 hits)
+	Line 3720: OPAMP_OP0CTRLA_OUTMODE_OFF_gc	KEYWORD3	RESERVED_WORD
+	Line 3721: OPAMP_OP0CTRLA_OUTMODE_NORMAL_gc	KEYWORD3	RESERVED_WORD
+	Line 3722: OPAMP_OP0CTRLA_OUTMODE_t	LITERAL1
+	Line 3876: OPAMP_OP0CTRLA	LITERAL1
+  C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp (2 hits)
+	Line 5: #if defined(OPAMP_OP0CTRLA)
+	Line 6:   Opamp Opamp0(PIN_PD1, PIN_PD2, PIN_PD3, 0, OPAMP_OP0CTRLA, OPAMP_OP0STATUS, OPAMP_OP0RESMUX, OPAMP_OP0INMUX, OPAMP_OP0SETTLE, OPAMP_OP0CAL);
+```
+2. It is possible that the selected "Op_num" needs to be declared in the IDE example file.
+
+# Opamp - Inverting_amplifier_with_follower
+
+### Sample Code
+```
+/***********************************************************************|
+| AVR-DB Opamp library                                                  |
+|                                                                       |
+| Inverting_amplifier_with_follower.ino                                 |
+|                                                                       |
+| A library for interfacing with the built-in AVR-DB Opamps             |
+| Developed in 2021 by MCUdude                                          |
+| https://github.com/MCUdude/                                           |
+|                                                                       |
+| In this example we use opamp 0 as voltage follower to drive the       |
+| inverting opamp 1. Since the output can't go below 0V, we center the  |
+| output voltage around Vdd/2, which is 5V if your supply voltage is    |
+| 5V. This means that if 1.5V is applied to PD1, PD5 will output 3.5V.  |
+|                                                                       |
+|                 | Gain   |  Wiper value  | R1  | R2  |                |
+|                 |--------|---------------|-----|-----|                |
+|                 | -0.067 | wiper::wiper0 | 60k | 4k  |                |
+|                 | -0.143 | wiper::wiper1 | 56k | 8k  |                |
+|                 | -0.334 | wiper::wiper2 | 48k | 16k |                |
+|                 | -1.00  | wiper::wiper3 | 32k | 32k |                |
+|                 | -1.667 | wiper::wiper4 | 24k | 40k |                |
+|                 | -3.00  | wiper::wiper5 | 16k | 48k |                |
+|                 | -7.00  | wiper::wiper6 | 8k  | 56k |                |
+|                 | -15.0  | wiper::wiper7 | 4k  | 60k |                |
+|          |\                                                           |
+|          |  \                                                         |
+|  PD1 ----| +  \           ______           ______                     |
+|          | OP0 |----+----|__R1__|----+----|__R2__|----+               |
+|     +----| -  /     |                |                |               |
+|     |    |  /       |                |    |\          |               |
+|     |    |/         |                |    |  \        |               |
+|     |               |                +----| -  \      |               |
+|     +---------------+                     | OP1 |-----+----- PD5      |
+|                                 Vdd/2 ----| +  /                      |
+|                                           |  /                        |
+|                                           |/      Gain = - (R2 / R1)  |
+|                                                                       |
+|                                                                       |
+| See Microchip's application note TB3286 for more information.         |
+|***********************************************************************/
+
+#include <Opamp.h>
+
+void setup() {
+  // Configure Opamp0 as a voltage follower tied to the Opamp1 resistor ladder
+  Opamp0.input_p = in_p::pin;    // Connect positive input to external input pin (PD1)
+  Opamp0.input_n = in_n::output; // Connect negative input to the opamp output
+  Opamp0.output  = out::enable;  // Enable output
+
+  // Configure Opamp1 pins
+  Opamp1.input_n = in_n::wiper;    // Connect negative input to the "middle" position of the resistor ladder
+  Opamp1.input_p = in_p::vdd_div2; // Connect positive input to Vdd/2 internally
+  Opamp1.output  = out::enable;    // Enable output
+
+  // Configure Opamp1 resistor ladder
+  Opamp1.ladder_top    = top::output;   // Connect the resistor ladder top to the opamp output
+  Opamp1.ladder_bottom = bottom::link;  // Connect the resistor ladder bottom to the output of the previous opamp
+  Opamp1.ladder_wiper  = wiper::wiper3; // Set a gain of -1
+
+  // Initialize Opamps
+  Opamp0.init();
+  Opamp1.init();
+
+  // Start the Opamp hardware
+  Opamp::start();
+}
+
+void loop() {
+
+}
+```
+### Result
+The Code failed to compile.
+
+### Error Message
+```
+Arduino: 1.8.16 (Windows 10), Board: "AVR DA-series, AVR128DA48"
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\examples\Inverting_amplifier_with_follower\Inverting_amplifier_with_follower.ino: In function 'void setup()':
+
+Inverting_amplifier_with_follower:51:3: error: 'Opamp1' was not declared in this scope
+
+   Opamp1.input_n = in_n::wiper;    // Connect negative input to the "middle" position of the resistor ladder
+
+   ^~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\examples\Inverting_amplifier_with_follower\Inverting_amplifier_with_follower.ino:51:3: note: suggested alternative: 'Opamp0'
+
+   Opamp1.input_n = in_n::wiper;    // Connect negative input to the "middle" position of the resistor ladder
+
+   ^~~~~~
+
+   Opamp0
+
+exit status 1
+
+'Opamp1' was not declared in this scope
+
+
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
+```
+### Ideas
+1. 'Opamp0' and 'Opamp1' objects are both undefined when being called in the example.  This seems to be related
+to the 'OPAMP_OPxCTRLA' being null.
+
+# Opamp - Non_inverting_amplifier
+
+### Sample Code
+```
+/***********************************************************************|
+| AVR-DB Opamp library                                                  |
+|                                                                       |
+| Non_inverting_amplifier.ino                                           |
+|                                                                       |
+| A library for interfacing with the built-in AVR-DB Opamps             |
+| Developed in 2021 by MCUdude                                          |
+| https://github.com/MCUdude/                                           |
+|                                                                       |
+| In this example we use opamp 0 as a non-inverting amplifier with a    |
+| gain multiplier set by the built-in resistor ladder.                  |
+|                                                                       |
+|                 | Gain |  Wiper value  | R1  | R2  |                  |
+|                 |------|---------------|-----|-----|                  |
+|                 | 1.06 | wiper::wiper0 | 60k | 4k  |                  |
+|                 | 1.14 | wiper::wiper1 | 56k | 8k  |                  |
+|                 | 1.33 | wiper::wiper2 | 48k | 16k |                  |
+|                 | 2.00 | wiper::wiper3 | 32k | 32k |                  |
+|                 | 2.66 | wiper::wiper4 | 24k | 40k |                  |
+|                 | 4.00 | wiper::wiper5 | 16k | 48k |                  |
+|                 | 8.00 | wiper::wiper6 | 8k  | 56k |                  |
+|                 | 15.0 | wiper::wiper7 | 4k  | 60k |                  |
+|                                                                       |
+|                          |\                                           |
+|                          |  \                                         |
+|                 PD1 -----| +  \                                       |
+|                          |     |-----+----- PD2                       |
+|                     +----| -  /      |                                |
+|                     |    |  /        |                                |
+|                     |    |/          |        Gain = 1 + (R2 / R1)    |
+|          ______     |     ______     |                                |
+|    +----|__R1__|----+----|__R2__|----+                                |
+|    |                                                                  |
+|   ___                                                                 |
+|    -                                                                  |
+|                                                                       |
+| See Microchip's application note TB3286 for more information.         |
+|***********************************************************************/
+
+#include <Opamp.h>
+
+void setup() {
+  // Configure opamp input pins
+  Opamp0.input_p = in_p::pin;   // Connect positive input to external input pin (PD1)
+  Opamp0.input_n = in_n::wiper; // Connect negative input to the "middle" position of the resistor ladder
+
+  // Configure resistor ladder
+  Opamp0.ladder_top    = top::output;   // Connect the resistor ladder top to the opamp output
+  Opamp0.ladder_bottom = bottom::gnd;   // Connect the resistor ladder bottom to ground
+  Opamp0.ladder_wiper  = wiper::wiper3; // Set a gain of two
+
+  // Enable opamp output
+  Opamp0.output = out::enable;
+
+  // Initialize Opamp0
+  Opamp0.init();
+
+  // Start the Opamp hardware
+  Opamp::start();
+}
+
+void loop() {
+
+}
+```
+
+### Result
+The code failed to compile.
+
+### Error Message
+```
+Arduino: 1.8.16 (Windows 10), Board: "AVR DA-series, AVR128DA48"
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp: In member function 'void Opamp::init()':
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:81:5: error: 'OPAMP_PWRCTRL' was not declared in this scope
+
+     OPAMP_PWRCTRL  = inrange; // Select normal or rail to rail input mode
+
+     ^~~~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp: In static member function 'static void Opamp::start(bool)':
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:98:3: error: 'OPAMP_TIMEBASE' was not declared in this scope
+
+   OPAMP_TIMEBASE = (ceil(F_CPU / 1000000L) - 1); // Calculate timebase based on F_CPU
+
+   ^~~~~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:101:5: error: 'OPAMP_CTRLA' was not declared in this scope
+
+     OPAMP_CTRLA |= OPAMP_ENABLE_bm;           // Enable opamp hardware
+
+     ^~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:101:5: note: suggested alternative: 'SPI1_CTRLA'
+
+     OPAMP_CTRLA |= OPAMP_ENABLE_bm;           // Enable opamp hardware
+
+     ^~~~~~~~~~~
+
+     SPI1_CTRLA
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:101:20: error: 'OPAMP_ENABLE_bm' was not declared in this scope
+
+     OPAMP_CTRLA |= OPAMP_ENABLE_bm;           // Enable opamp hardware
+
+                    ^~~~~~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:101:20: note: suggested alternative: 'AC_ENABLE_bm'
+
+     OPAMP_CTRLA |= OPAMP_ENABLE_bm;           // Enable opamp hardware
+
+                    ^~~~~~~~~~~~~~~
+
+                    AC_ENABLE_bm
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:106:103: error: 'Opamp1' was not declared in this scope
+
+     while ((!Opamp0.status() && (Opamp0.wait_settle == true && Opamp0.enable == enable::enable)) || (!Opamp1.status() && (Opamp1.wait_settle == true && Opamp1.enable == enable::enable)));
+
+                                                                                                       ^~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:106:103: note: suggested alternative: 'Opamp'
+
+     while ((!Opamp0.status() && (Opamp0.wait_settle == true && Opamp0.enable == enable::enable)) || (!Opamp1.status() && (Opamp1.wait_settle == true && Opamp1.enable == enable::enable)));
+
+                                                                                                       ^~~~~~
+
+                                                                                                       Opamp
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:109:5: error: 'OPAMP_CTRLA' was not declared in this scope
+
+     OPAMP_CTRLA &= ~OPAMP_ENABLE_bm; // Disable opamp hardware
+
+     ^~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:109:5: note: suggested alternative: 'SPI1_CTRLA'
+
+     OPAMP_CTRLA &= ~OPAMP_ENABLE_bm; // Disable opamp hardware
+
+     ^~~~~~~~~~~
+
+     SPI1_CTRLA
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:109:21: error: 'OPAMP_ENABLE_bm' was not declared in this scope
+
+     OPAMP_CTRLA &= ~OPAMP_ENABLE_bm; // Disable opamp hardware
+
+                     ^~~~~~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:109:21: note: suggested alternative: 'AC_ENABLE_bm'
+
+     OPAMP_CTRLA &= ~OPAMP_ENABLE_bm; // Disable opamp hardware
+
+                     ^~~~~~~~~~~~~~~
+
+                     AC_ENABLE_bm
+
+exit status 1
+
+Error compiling for board AVR DA-series.
+
+
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
+```
+
+### Ideas
+1. More issues found with the init() function of the Opamp class.
+2. Fixing the initiaion process of the Opamp class could be a solution to this issue. 
+
+# Opamp - Voltage Follower
+### Sample Code
+```
+/***********************************************************************|
+| AVR-DB Opamp library                                                  |
+|                                                                       |
+| Voltage_follower.ino                                                  |
+|                                                                       |
+| A library for interfacing with the built-in AVR-DB Opamps             |
+| Developed in 2021 by MCUdude                                          |
+| https://github.com/MCUdude/                                           |
+|                                                                       |
+| In this example we use opamp 0 as a voltage follower.                 |
+|                                                                       |
+|                          |\                                           |
+|                          |  \                                         |
+|                 PD1 -----| +  \                                       |
+|                          |     |-----+----- PD2                       |
+|                     +----| -  /      |                                |
+|                     |    |  /        |                                |
+|                     |    |/          |      Gain = 1                  |
+|                     |                |                                |
+|                     +----------------+                                |
+|                                                                       |
+|                                                                       |
+| See Microchip's application note TB3286 for more information.         |
+|***********************************************************************/
+
+#include <Opamp.h>
+
+void setup() {
+  // Configure opamp input pins
+  Opamp0.input_p = in_p::pin;    // Connect positive input to external input pin (PD1)
+  Opamp0.input_n = in_n::output; // Connect negative input to the opamp output
+
+  // Enable opamp output
+  Opamp0.output = out::enable;
+
+  // Initialize Opamp0
+  Opamp0.init();
+
+  // Start the Opamp hardware
+  Opamp::start();
+}
+
+void loop() {
+
+}
+```
+
+### Result
+The code fails to compile.
+
+### Error Message
+```
+Arduino: 1.8.16 (Windows 10), Board: "AVR DA-series, AVR128DA48"
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp: In member function 'void Opamp::init()':
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:81:5: error: 'OPAMP_PWRCTRL' was not declared in this scope
+
+     OPAMP_PWRCTRL  = inrange; // Select normal or rail to rail input mode
+
+     ^~~~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp: In static member function 'static void Opamp::start(bool)':
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:98:3: error: 'OPAMP_TIMEBASE' was not declared in this scope
+
+   OPAMP_TIMEBASE = (ceil(F_CPU / 1000000L) - 1); // Calculate timebase based on F_CPU
+
+   ^~~~~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:101:5: error: 'OPAMP_CTRLA' was not declared in this scope
+
+     OPAMP_CTRLA |= OPAMP_ENABLE_bm;           // Enable opamp hardware
+
+     ^~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:101:5: note: suggested alternative: 'SPI1_CTRLA'
+
+     OPAMP_CTRLA |= OPAMP_ENABLE_bm;           // Enable opamp hardware
+
+     ^~~~~~~~~~~
+
+     SPI1_CTRLA
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:101:20: error: 'OPAMP_ENABLE_bm' was not declared in this scope
+
+     OPAMP_CTRLA |= OPAMP_ENABLE_bm;           // Enable opamp hardware
+
+                    ^~~~~~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:101:20: note: suggested alternative: 'AC_ENABLE_bm'
+
+     OPAMP_CTRLA |= OPAMP_ENABLE_bm;           // Enable opamp hardware
+
+                    ^~~~~~~~~~~~~~~
+
+                    AC_ENABLE_bm
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:106:103: error: 'Opamp1' was not declared in this scope
+
+     while ((!Opamp0.status() && (Opamp0.wait_settle == true && Opamp0.enable == enable::enable)) || (!Opamp1.status() && (Opamp1.wait_settle == true && Opamp1.enable == enable::enable)));
+
+                                                                                                       ^~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:106:103: note: suggested alternative: 'Opamp'
+
+     while ((!Opamp0.status() && (Opamp0.wait_settle == true && Opamp0.enable == enable::enable)) || (!Opamp1.status() && (Opamp1.wait_settle == true && Opamp1.enable == enable::enable)));
+
+                                                                                                       ^~~~~~
+
+                                                                                                       Opamp
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:109:5: error: 'OPAMP_CTRLA' was not declared in this scope
+
+     OPAMP_CTRLA &= ~OPAMP_ENABLE_bm; // Disable opamp hardware
+
+     ^~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:109:5: note: suggested alternative: 'SPI1_CTRLA'
+
+     OPAMP_CTRLA &= ~OPAMP_ENABLE_bm; // Disable opamp hardware
+
+     ^~~~~~~~~~~
+
+     SPI1_CTRLA
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:109:21: error: 'OPAMP_ENABLE_bm' was not declared in this scope
+
+     OPAMP_CTRLA &= ~OPAMP_ENABLE_bm; // Disable opamp hardware
+
+                     ^~~~~~~~~~~~~~~
+
+C:\Users\paulm\AppData\Local\Arduino15\packages\Microchip\hardware\megaavr\1.0.0\libraries\Opamp\src\Opamp.cpp:109:21: note: suggested alternative: 'AC_ENABLE_bm'
+
+     OPAMP_CTRLA &= ~OPAMP_ENABLE_bm; // Disable opamp hardware
+
+                     ^~~~~~~~~~~~~~~
+
+                     AC_ENABLE_bm
+
+exit status 1
+
+Error compiling for board AVR DA-series.
+
+
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
+```
+
+### Ideas 
+1. The problem with this example seems to be linked to issues when the init() function is called for the 
+Opamp class.

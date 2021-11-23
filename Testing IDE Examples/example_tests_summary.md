@@ -10,9 +10,13 @@
 | EEPROM - eeprom_crc				| Yes		| "Serial1" only prints in the "void loop()" function	|
 | EEPROM - eeprom_get				| Yes		| "Serial1" only prints in the "void loop()" function	|
 | EEPROM - Iteration				| Yes		| None													|
-| EEPROM - eeprom_put				| Yes		| "Serial1" only prints in the "void loop()" function	|
-| EEPROM - eeprom_read				| Yes		| Must change "Serial" to "Serial1"						|
+| EEPROM - eeprom_put				| Yes		| 'Serial1' only prints in the "void loop()" function	|
+| EEPROM - eeprom_read				| Yes		| Must change "Serial" to 'Serial1'						|
 | DxCore - EnhancedIODemo			| Yes		| None													|
-| DxCore - ModernRevSer				| Yes		| "Serial1" only prints in the "void loop()" function	|
-| DxCore - SAMPLENDemo				| Yes		| "Serial1" only prints in the "void loop()" function	|
+| DxCore - ModernRevSer				| Yes		| 'Serial1' only prints in the 'void loop()' function	|
+| DxCore - SAMPLENDemo				| Yes		| 'Serial1' only prints in the 'void loop()' function	|
+| Opamp - Inverting_amplifier		| No		| 'Opamp0' object is not defined when running			|
+| Opamp - Inverting_amplifier_with_follower| No | 'Opampx' objects are undefined						|
+| Opamp - Non_inverting_amplifier	| No		| init() function doesn't setup variables properly		|
+| Opamp - Voltage_follower			| No 		| init() function doesn't setup variables properly		|   
 	
