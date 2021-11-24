@@ -1558,3 +1558,119 @@ option enabled in File -> Preferences.
 ### Ideas 
 1. The problem with this example seems to be linked to issues when the init() function is called for the 
 Opamp class.
+
+# Servo_DxCore - Knob
+
+### Sample Code
+```
+/*
+ Controlling a servo position using a potentiometer (variable resistor)
+ by Michal Rinott <http://people.interaction-ivrea.it/m.rinott>
+
+ modified on 8 Nov 2013
+ by Scott Fitzgerald
+ http://www.arduino.cc/en/Tutorial/Knob
+*/
+
+#include <Servo_DxCore.h>
+
+Servo myservo;  // create servo object to control a servo
+
+int potpin = A7;  // analog pin used to connect the potentiometer - analog channel 7 exists everywhere!
+int val;    // variable to read the value from the analog pin
+
+void setup() {
+  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+}
+
+void loop() {
+  val = analogRead(potpin);            // reads the value of the potentiometer (value between 0 and 1023)
+  val = map(val, 0, 1023, 0, 180);     // scale it to use it with the servo (value between 0 and 180)
+  myservo.write(val);                  // sets the servo position according to the scaled value
+  delay(15);                           // waits for the servo to get there
+}
+```
+
+### Results 
+The code compiles correctly. 
+
+# Servo_DxCore - ServoMaxTest
+
+### Sample Code
+```
+/*
+  Yes, this library *really* can drive 12 servos from a single type B timer!
+*/
+
+#include <Servo_DxCore.h>
+
+Servo myservos[12];
+byte pos[12];
+char dir[12] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+
+void setup() {
+  TCA0.SPLIT.CTRLA = 0;
+  for (byte i = 0; i < 12; i++) {
+    myservos[i].attach(i);
+    pos[i] = i * 15;
+  }
+}
+
+void loop() {
+  for (byte i = 0; i < 12; i++) {
+    myservos[i].write(pos[i]);
+    pos[i] += dir[i];
+    if (pos[i] == 180) {
+      dir[i] = -1;
+    }
+    if (pos[i] == 0) {
+      dir[i] = 1;
+    }
+  }
+  delay(30);                       // waits 30ms for the servo to reach the position
+}
+```
+### Results
+The code compiles correctly.
+
+# Servo_DxCore - Sweep
+
+### Sample Code
+```
+/* Sweep
+ by BARRAGAN <http://barraganstudio.com>
+ This example code is in the public domain.
+
+ modified 8 Nov 2013
+ by Scott Fitzgerald
+ http://www.arduino.cc/en/Tutorial/Sweep
+*/
+
+#include <Servo_DxCore.h>
+
+Servo myservo;  // create servo object to control a servo
+// twelve servo objects can be created on most boards
+
+int pos = 0;    // variable to store the servo position
+
+void setup() {
+  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+}
+
+void loop() {
+  for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
+  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
+}
+```
+
+### Results 
+The code compiles correctly.
+
+

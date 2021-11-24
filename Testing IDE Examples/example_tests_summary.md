@@ -18,5 +18,8 @@
 | Opamp - Inverting_amplifier		| No		| 'Opamp0' object is not defined when running			|
 | Opamp - Inverting_amplifier_with_follower| No | 'Opampx' objects are undefined						|
 | Opamp - Non_inverting_amplifier	| No		| init() function doesn't setup variables properly		|
-| Opamp - Voltage_follower			| No 		| init() function doesn't setup variables properly		|   
+| Opamp - Voltage_follower			| No 		| init() function doesn't setup variables properly		|
+| Servo_DxCore - Knob				| Yes		| None													|
+| Servo_DxCore - ServoMaxTest		| Yes		| None													|
+| Servo_DxCore - Sweep				| Yes		| None													|   
 	
