@@ -1673,4 +1673,220 @@ void loop() {
 ### Results 
 The code compiles correctly.
 
+# Logic - Three_input_AND
+
+### Sample Code
+```
+/***********************************************************************|
+| megaAVR Configurable Custom Logic library                             |
+|                                                                       |
+| Three_input_AND.ino                                                   |
+|                                                                       |
+| A library for interfacing with the megaAVR Configurable Custom Logic. |
+| Developed in 2019 by MCUdude.                                         |
+| https://github.com/MCUdude/                                           |
+|                                                                       |
+| In this example we use the configurable logic peripherals the the     |
+| megaAVR to create a 3-input AND gate using logic block 0 on PORT A.   |
+| The example is pretty straight forward, but the truth table value may |
+| be a little difficult to understand at first glance.                  |
+| Here's how 0x80 turns out to be the correct value to create a 3-input |
+| AND gate:                                                             |
+|                                           3-input AND truth table:    |
+| If we look at the truth table             |PA2|PA1|PA0| Y |           |
+| to the right, we can see that             |---|---|---|---|           |
+| all binary values for Y can               | 0 | 0 | 0 | 0 |           |
+| be represented as 10000000.               | 0 | 0 | 1 | 0 |           |
+| If we convert this 8-bit                  | 0 | 1 | 0 | 0 |           |
+| binary number into hex, we                | 0 | 1 | 1 | 0 |           |
+| get 0x80.                                 | 1 | 0 | 0 | 0 |           |
+|                                           | 1 | 0 | 1 | 0 |           |
+| In this example the output pin            | 1 | 1 | 0 | 0 |           |
+| will go high if all three                 | 1 | 1 | 1 | 1 |           |
+| inputs are high.                                                      |
+|***********************************************************************/
+
+#include <Logic.h>
+
+void setup() {
+  // Initialize logic block 0
+
+  Logic0.enable = true;                 // Enable logic block 0
+  Logic0.input0 = in::input_pullup;     // Set PA0 as input with pullup
+  Logic0.input1 = in::input_pullup;     // Set PA1 as input with pullup
+  Logic0.input2 = in::input_pullup;     // Set PA2 as input with pullup
+  //Logic0.output_swap = out::pin_swap; // Uncomment this line to route the output to alternate location, if available.
+  Logic0.output = out::enable;          // Enable logic block 0 output pin PA3 (if not remapped)
+  Logic0.filter = filter::disable;      // No output filter enabled
+  Logic0.truth = 0x80;                  // Set truth table
+
+  // Initialize logic block 0
+  Logic0.init();
+
+  // Start the AVR logic hardware
+  Logic::start();
+}
+
+void loop() {
+  // When using configurable custom logic the CPU isn't doing anything!
+}
+```
+ 
+### Result
+Code compiles correctly but the output pin remains off regardless of the voltage sent to each
+input.
+
+### Notes
+1. The output should go high when a voltage is applied to each input of the gate, but
+the output remains low regardless of the input's status.
+
+
+# Logic - Three_input_NAND
+
+### Sample Code
+```
+/***********************************************************************|
+| megaAVR Configurable Custom Logic library                             |
+|                                                                       |
+| Three_input_NAND.ino                                                  |
+|                                                                       |
+| A library for interfacing with the megaAVR Configurable Custom Logic. |
+| Developed in 2019 by MCUdude.                                         |
+| https://github.com/MCUdude/                                           |
+|                                                                       |
+| In this example we use the configurable logic peripherals the the     |
+| megaAVR to create a 3-input NAND gate using logic block 0 on PORT A.  |
+| The example is pretty straight forward, but the truth table value may |
+| be a little difficult to understand at first glance.                  |
+| Here's how 0x7F turns out to be the correct value to create a 3-input |
+| NAND gate:                                                            |
+|                                           3-input NAND truth table:   |
+| If we look at the truth table             |PA2|PA1|PA0| Y |           |
+| to the right, we can see that             |---|---|---|---|           |
+| all binary values for Y can               | 0 | 0 | 0 | 1 |           |
+| be represented as 01111111.               | 0 | 0 | 1 | 1 |           |
+| If we convert this 8-bit                  | 0 | 1 | 0 | 1 |           |
+| binary number into hex, we                | 0 | 1 | 1 | 1 |           |
+| get 0x7F.                                 | 1 | 0 | 0 | 1 |           |
+|                                           | 1 | 0 | 1 | 1 |           |
+| In this example the output pin            | 1 | 1 | 0 | 1 |           |
+| will go low if all three                  | 1 | 1 | 1 | 0 |           |
+| inputs are high.                                                      |
+|***********************************************************************/
+
+#include <Logic.h>
+
+void setup() {
+  // Initialize logic block 0
+
+  Logic0.enable = true;                 // Enable logic block 0
+
+  Logic0.input0 = in::input_pullup;     // Set PA0 as input with pullup
+  Logic0.input1 = in::input_pullup;     // Set PA1 as input with pullup
+  Logic0.input2 = in::input_pullup;     // Set PA2 as input with pullup
+  //Logic0.output_swap = out::pin_swap; // Uncomment this line to route the output to alternate location, if available.
+  Logic0.output = out::enable;          // Enable logic block 0 output pin (PA3 (ATmega) or PA5 (ATtiny))
+  Logic0.filter = filter::disable;      // No output filter enabled
+  Logic0.truth = 0x7F;                  // Set truth table
+
+  // Initialize logic block 0
+  Logic0.init();
+
+  // Start the AVR logic hardware
+  Logic::start();
+}
+
+void loop() {
+  // When using configurable custom logic the CPU isn't doing anything!
+}
+```
+### Result
+The code compiles correct but the logic gate appears to be functioning incorrectly.
+
+### Notes
+1. The ouput remains on regardless of the voltage being delivered to the inputs.
+![Alt text](pics/3_NAND.jpg "Three input NAND")
+2. The inputs appear to be outputing a slight voltage, as a LED connected to the pin 
+will dimly light up.  
+
+
+
+# Logic - Three_input_OR
+
+### Sample Code
+```
+/***********************************************************************|
+| megaAVR Configurable Custom Logic library                             |
+|                                                                       |
+| Three_input_OR.ino                                                    |
+|                                                                       |
+| A library for interfacing with the megaAVR Configurable Custom Logic. |
+| Developed in 2019 by MCUdude.                                         |
+| https://github.com/MCUdude/                                           |
+|                                                                       |
+| In this example we use the configurable logic peripherals the the     |
+| megaAVR to create a 3-input OR gate using logic block 0 on PORT A.    |
+| The example is pretty straight forward, but the truth table value may |
+| be a little difficult to understand at first glance.                  |
+| Here's how 0xFE turns out to be the correct value to create a 3-input |
+| OR gate:                                                              |
+|                                           3-input OR truth table:     |
+| If we look at the truth table             |PA2|PA1|PA0| Y |           |
+| to the right, we can see that             |---|---|---|---|           |
+| all binary values for Y can               | 0 | 0 | 0 | 0 |           |
+| be represented as 11111110.               | 0 | 0 | 1 | 1 |           |
+| If we convert this 8-bit                  | 0 | 1 | 0 | 1 |           |
+| binary number into hex, we                | 0 | 1 | 1 | 1 |           |
+| get 0xFE.                                 | 1 | 0 | 0 | 1 |           |
+|                                           | 1 | 0 | 1 | 1 |           |
+| In this example the output pin            | 1 | 1 | 0 | 1 |           |
+| will go high if one or more               | 1 | 1 | 1 | 1 |           |
+| inputs are high.                                                      |
+|***********************************************************************/
+
+#include <Logic.h>
+
+void setup() {
+  // Initialize logic block 0
+  // Logic block 0 has three inputs, PA0, PA1 and PA2.
+  // Because PA0 is shared with the UPDI pin and is not usually an option
+  // we use PA3 via the event system in this example on ATtiny parts
+  // It has one output, PA3 on ATmega, PA5 on ATtiny.
+  // Or alternate output on PA6 on ATmega, PB6 on 20 and 24-pin ATtiny.
+
+  pinMode(20, OUTPUT);
+  digitalWrite(20, HIGH);
+  
+  Logic0.enable = true;               // Enable logic block 0
+
+  Logic0.input0 = in::input_pullup;   // Set PA0 as input with pullup
+  Logic0.input1 = in::input_pullup;   // Set PA1 as input with pullup
+  Logic0.input2 = in::input_pullup;   // Set PA2 as input with pullup
+  //Logic0.output_swap = out::pin_swap; // Uncomment this line to route the output to alternate location, if available.
+  Logic0.output = out::enable;        // Enable logic block 0 output pin (PA3 (ATmega) or PA5 (ATtiny))
+  Logic0.filter = filter::disable;    // No output filter enabled
+  Logic0.truth = 0xFE;                // Set truth table
+
+  // Initialize logic block 0
+  Logic0.init();
+
+  // Start the AVR logic hardware
+  Logic::start();
+}
+
+void loop() {
+  // When using configurable custom logic the CPU isn't doing anything!
+}
+```
+
+### Result
+The code compiles correctly, but the output is high even when the inputs are all low.
+
+### Notes
+1. According to the logic table, the ouput should be low if the three inputs are also low.  
+This indicates that the logic gate is not functioning properly. 
+2. The three inputs appear to be outputing a low level voltage, which can be seen when an LED
+is connected to the pin.  The LED is dimly lit.
+
+![Alt text](pics/3_OR.jpg "Three input OR")
 

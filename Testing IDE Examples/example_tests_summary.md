@@ -21,5 +21,8 @@
 | Opamp - Voltage_follower			| No 		| init() function doesn't setup variables properly		|
 | Servo_DxCore - Knob				| Yes		| None													|
 | Servo_DxCore - ServoMaxTest		| Yes		| None													|
-| Servo_DxCore - Sweep				| Yes		| None													|   
+| Servo_DxCore - Sweep				| Yes		| None													|
+| Logic - Three_input_AND			| Yes		| AND remains off regardless of input status			|
+| Logic - Three_input_NAND			| Yes		| NAND remains on regardless of input status			|
+| Logic - Three_input_OR			| Yes		| OR gate remains on regardless of input status			|   
 	
