@@ -28,6 +28,8 @@
 | Logic - Two_input_AND				| Yes		| AND remains on regardless of the input status			|
 | Logic - Two_input_NAND			| Yes		| NAND output remains off regardless of input status	|
 | Logic - Two_input_OR				| Yes		| OR gate's ouput remains on regardless of input status	|
-
+| Servo - Knob						| Yes		| A servo is required to fully test this example		|
+| Servo - ServoMaxTest				| Yes		| A servo is required to fully test this example		|
+| Servo - Sweep						| Yes		| A servo is required to fully test this example		|
 				   
 	
