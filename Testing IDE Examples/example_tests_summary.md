@@ -31,5 +31,6 @@
 | Servo - Knob						| Yes		| A servo is required to fully test this example		|
 | Servo - ServoMaxTest				| Yes		| A servo is required to fully test this example		|
 | Servo - Sweep						| Yes		| A servo is required to fully test this example		|
-				   
+| SoftwareSerial - SoftwareSerialExample | Yes  | There is no ouput to the serial monitor				|
+| SoftwareSerial - TwoPortReceive	| Yes		| None													|				   
 	
