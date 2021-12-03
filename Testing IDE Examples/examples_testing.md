@@ -711,7 +711,7 @@ is changed to 'Serial1'.
 ![Alt text](pics/eeprom_read.png "EEPROM read")
 
 # DxCore - EnhancedIODemo
-### Sample Code
+### Example Code
 ```
 /*********************\\*****************************//************************
                        \\   Enhanced I/O API Demo   //
@@ -823,7 +823,7 @@ void openDrainBitbang(uint32_t data) {
 Code compiles correctly
 
 # DxCore - ModernRevSer
-### Code Sample
+### Example Code
 
 ```
 /* Read the silicon revision of a "modern" (post-2016, AVRxt) part, including megaAVR 0-series,
@@ -914,7 +914,7 @@ is set to 'Serial1'.
 
 # DxCore - SAMPLENDemo
 
-### Sample code
+### Example code
 ```
 /*
 ADC0.SAMPCTRL demo
@@ -979,7 +979,7 @@ is set to 'Serial1'.
 
 # Opamp - Inverting_amplifier
 
-### Sample code
+### Example code
 ```
 /***********************************************************************|
 | AVR-DB Opamp library                                                  |
@@ -1113,7 +1113,7 @@ Search "OPAMP_OP0CTRLA" (6 hits in 2 files of 465 searched)
 
 # Opamp - Inverting_amplifier_with_follower
 
-### Sample Code
+### Example Code
 ```
 /***********************************************************************|
 | AVR-DB Opamp library                                                  |
@@ -1225,7 +1225,7 @@ to the 'OPAMP_OPxCTRLA' being null.
 
 # Opamp - Non_inverting_amplifier
 
-### Sample Code
+### Example Code
 ```
 /***********************************************************************|
 | AVR-DB Opamp library                                                  |
@@ -1402,7 +1402,7 @@ option enabled in File -> Preferences.
 2. Fixing the initiaion process of the Opamp class could be a solution to this issue. 
 
 # Opamp - Voltage Follower
-### Sample Code
+### Example Code
 ```
 /***********************************************************************|
 | AVR-DB Opamp library                                                  |
@@ -1561,7 +1561,7 @@ Opamp class.
 
 # Servo_DxCore - Knob
 
-### Sample Code
+### Example Code
 ```
 /*
  Controlling a servo position using a potentiometer (variable resistor)
@@ -1596,7 +1596,7 @@ The code compiles correctly.
 
 # Servo_DxCore - ServoMaxTest
 
-### Sample Code
+### Example Code
 ```
 /*
   Yes, this library *really* can drive 12 servos from a single type B timer!
@@ -1635,7 +1635,7 @@ The code compiles correctly.
 
 # Servo_DxCore - Sweep
 
-### Sample Code
+### Example Code
 ```
 /* Sweep
  by BARRAGAN <http://barraganstudio.com>
@@ -1675,7 +1675,7 @@ The code compiles correctly.
 
 # Logic - Three_input_AND
 
-### Sample Code
+### Example Code
 ```
 /***********************************************************************|
 | megaAVR Configurable Custom Logic library                             |
@@ -1743,7 +1743,7 @@ the output remains low regardless of the input's status.
 
 # Logic - Three_input_NAND
 
-### Sample Code
+### Example Code
 ```
 /***********************************************************************|
 | megaAVR Configurable Custom Logic library                             |
@@ -1813,7 +1813,7 @@ will dimly light up.
 
 # Logic - Three_input_OR
 
-### Sample Code
+### Example Code
 ```
 /***********************************************************************|
 | megaAVR Configurable Custom Logic library                             |
@@ -1892,7 +1892,7 @@ is connected to the pin.  The LED is dimly lit.
 
 # Logic - Two_input_AND
 
-### Sample Code
+### Example Code
 ```
 /***********************************************************************|
 | megaAVR Configurable Custom Logic library                             |
@@ -1964,7 +1964,7 @@ The code compiles correctly but the AND gate doesn't function properly.
 
 # Logic - Two_input_NAND
 
-### Sample Code
+### Example Code
 ```
 /***********************************************************************|
 | megaAVR Configurable Custom Logic library                             |
@@ -2032,7 +2032,7 @@ The code compiles correctly but the output pin remains off regardless of the inp
 1. The output pin remains off regardless of the status of the input pins.  
 
 # Logic - Two_input_AND
-### Sample Code
+### Example Code
 ```
 /***********************************************************************|
 | megaAVR Configurable Custom Logic library                             |
@@ -2106,7 +2106,7 @@ This means that they cannot read voltages applied to the pin.
 ![Alt text](pics/pin_map.png "Pin mapping")
 
 # Servo - Knob
-### Sample Code
+### Example Code
 ```
 /*
   Controlling a servo position using a potentiometer (variable resistor)
@@ -2185,7 +2185,7 @@ The code compiles correctly.
 
 # Servo - Sweep
 
-### Sample Code
+### Example Code
 ```
 /* Sweep
   by BARRAGAN <http://barraganstudio.com>
@@ -2228,7 +2228,7 @@ The code compiles correctly.
 
 # SoftwareSerial - SoftwareSerialExample
 
-### Sample Code
+### Example Code
 ```
 /*
   Software serial multiple serial test

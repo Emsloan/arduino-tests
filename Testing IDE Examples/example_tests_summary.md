@@ -20,7 +20,7 @@
 | Logic - Three_input_OR			| Yes		| OR gate remains on regardless of input status			|
 | Logic - Two_input_AND				| Yes		| AND remains on regardless of the input status			|
 | Logic - Two_input_NAND			| Yes		| NAND output remains off regardless of input status	|
-| Logic - Two_input_OR				| Yes		| OR gate's ouput remains on regardless of input status	|
+| Logic - Two_input_OR				| Yes		| OR gate's output remains on regardless of input status	|
 | Logic - Modulate					| No		| tcb1 is currently not setup							|
 | Logic - Oscillate					| No		| tca0_cnta is currently not setup						|
 | Logic - TCDThirdPWM				| No		| Issue	in Event.h										|
