@@ -46,7 +46,7 @@ Fix compiler errors in the file:
     Arduino15/packages/Microchip/hardware/megaavr/1.0.0/libraries/Wire/src/Wire.cpp
 
 
-Sketch Upload after fix:
+## Sketch Upload after fix:
 
     [![title](pics/Potentiometer_Post_CompilerFixes.png)]
 
