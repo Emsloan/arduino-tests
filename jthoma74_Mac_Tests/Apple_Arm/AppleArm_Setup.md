@@ -29,7 +29,8 @@
 # Troubleshooting
 
 Clear cache of Arduino application data by pressing cmd + space and searching/checking each of the following file paths:
-    > ~/Library/Caches
-    > ~/Library/Application Support
-    > /Library/Caches
-    > /Library/Application Support
+     
+     ~/Library/Caches
+     ~/Library/Application Support
+     /Library/Caches
+     /Library/Application Support
