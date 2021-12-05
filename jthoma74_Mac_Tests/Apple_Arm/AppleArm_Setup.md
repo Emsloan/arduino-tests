@@ -9,7 +9,7 @@
 4. Follow the prompts to complete installation
 5. Drag and drop the Arduino icon into the Applications folder when prompted
 
-    (/arduino-tests/Markdown/Mac/Application-Folder-MacOS.png)
+
 
 # One-Time Setup
 
