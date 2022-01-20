@@ -1,0 +1,7 @@
+Testing python's ability to open a
+file and
+print
+it to
+the
+command
+prompt.
