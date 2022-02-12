@@ -1,3 +1,9 @@
+/*
+ * Sweep
+ * Arduino Example
+ * https://docs.arduino.cc/learn/electronics/servo-motors
+ */
+
 #include <Servo.h>
 
 Servo myservo;  // create servo object to control a servo
