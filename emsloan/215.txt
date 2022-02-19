@@ -4,3 +4,4 @@ troubleshooting pins.
 Testing potentiometer by itself. 
 Testing servo without potentiometer
 Trying alternate pins
+Done
