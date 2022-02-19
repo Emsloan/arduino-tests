@@ -2,3 +2,4 @@ working on it
 troubleshooting pins. 
 
 Testing potentiometer by itself. 
+Testing servo without potentiometer
