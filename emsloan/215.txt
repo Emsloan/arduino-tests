@@ -1,2 +1,4 @@
 working on it
-troubleshooting pins
+troubleshooting pins. 
+
+Testing potentiometer by itself. 
