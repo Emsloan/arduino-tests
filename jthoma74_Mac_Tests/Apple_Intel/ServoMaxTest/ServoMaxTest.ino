@@ -1,6 +1,7 @@
 /*
 * Yes, this library *really* can drive 12 servos from a single type B timer!
 * Example ServoMax Test from Arduino IDE library
+* Tested ServoMaxTest
 */
 
 #include <Servo.h>
