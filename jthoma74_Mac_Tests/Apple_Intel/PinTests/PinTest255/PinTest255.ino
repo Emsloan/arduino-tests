@@ -4,23 +4,20 @@
  * Testing pin maps using Analog read input on Arduino
  */
 
-Servo serv;
+int outputPin = 11;  // pin to test
+int inputPin = 7;    // input pin to read from output pin
+int val = 0;      // store read value
 
 void setup() {
-  // put your setup code here, to run once:
-  serv.attach(22); //analog read to test pin
+  pinMode(ouputPin, OUTPUT);  // sets pin as output
+  pinMode(inputPin, INPUT);    // sets pin as input
   serial3.begin(9600);
-  pinMode(4,OUTPUT);
-
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  digitalWrite(4,HIGH);
-  delay(1000);
-  digitalWrite(4, LOW);
-  delay(1000);
-
-  analogRead(22); //read input passed back into analog input
-
+  digitalWrite(outputPin,HIGH);
+  delay(1000)
+  val = analogRead(inputPin);   // read the input pin
+  Serial.println(buttonState);
+  delay(1);        // delay in between reads for stability
 }
