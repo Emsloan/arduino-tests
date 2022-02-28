@@ -3,7 +3,7 @@
   <package type="TQFP"/>
   <pin id="pin1">
     <function category="PORT" label="Pduncans"/>
-	<function category="Arduino" label="Testing"/>
+	<function category="ARDUINO" label="Testing"/>
   </pin>
   <pin id="pin2">
     <function category="DEBUG" label="ID"/>
