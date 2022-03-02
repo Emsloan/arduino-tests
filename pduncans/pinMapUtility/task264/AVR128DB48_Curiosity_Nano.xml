@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pinout device="AVR128DB48">
+  <package type="TQFP"/>
+  <pin id="pin1">
+    <function category="PORT" label="NC"/>
+  </pin>
+  <pin id="pin2">
+    <function category="DEBUG" label="ID"/>
+  </pin>
+  <pin id="pin3">
+	<function category="ARDUINO" label="8"/>
+    <function category="PER" label="CDC RX"/>
+	<function category="UART" label="USART3 TX"/>
+    <function category="PORT" label="PB0"/>
+  </pin>
+  <pin id="pin4">
+	<function category="ARDUINO" label="9"/>
+    <function category="PER" label="CDC TX"/>
+	  <function category="UART" label="USART3 RX"/>
+    <function category="PORT" label="PB1"/>
+  </pin>
+  <pin id="pin5">
+	<function category="ARDUINO" label="11"/>
+    <function category="DEBUG" label="DBG1"/>
+    <function category="PORT" label="PB3"/>
+    <function category="PER" label="LED0"/>
+  </pin>
+  <pin id="pin6">
+	<function category="ARDUINO" label="10"/>
+    <function category="DEBUG" label="DBG2"/>
+    <function category="PORT" label="PB2"/>
+    <function category="PER" label="SW0"/>
+  </pin>
+  <pin id="pin7">
+	<function category="ARDUINO" label="38"/>
+    <function category="PORT" label="PF4"/>
+    <function category="UART" label="USART2 TX"/>
+  </pin>
+  <pin id="pin8">
+	<function category="ARDUINO" label="39"/>
+    <function category="PORT" label="PF5"/>
+    <function category="UART" label="USART2 RX"/>
+  </pin>
+  <pin id="pin9">
+	<function category="ARDUINO" label="2"/>
+    <function category="PORT" label="PA2"/>
+    <function category="I2C" label="TWI0 SDA"/>
+  </pin>
+  <pin id="pin10">
+	<function category="ARDUINO" label="3"/>
+    <function category="PORT" label="PA3"/>
+    <function category="I2C" label="TWI0 SCL"/>
+  </pin>
+  <pin id="pin11">
+	<function category="ARDUINO" label="4"/>
+    <function category="PORT" label="PA4"/>
+    <function category="SPI" label="SPI0 MOSI"/>
+  </pin>
+  <pin id="pin12">
+	<function category="ARDUINO" label="5"/>
+    <function category="PORT" label="PA5"/>
+    <function category="SPI" label="SPI0 MISO"/>
+  </pin>
+  <pin id="pin13">
+	<function category="ARDUINO" label="6"/>
+    <function category="PORT" label="PA6"/>
+    <function category="SPI" label="SPI0 SCK"/>
+  </pin>
+  <pin id="pin14">
+	<function category="ARDUINO" label="7"/>
+    <function category="PORT" label="PA7"/>
+    <function category="SPI" label="SPI0 SS"/>
+  </pin>
+  <pin id="pin15">
+    <function category="GND" label="GND"/>
+  </pin>
+  <pin id="pin16">
+	<function category="ARDUINO" label="8"/>
+    <function category="PORT" label="PB0"/>
+    <function category="UART" label="USART3 TX"/>
+    <function category="PER" label="CDC RX"/>
+  </pin>
+  <pin id="pin17">
+	<function category="ARDUINO" label="9"/>
+    <function category="PORT" label="PB1"/>
+    <function category="UART" label="USART3 RX"/>
+    <function category="PER" label="CDC TX"/>
+  </pin>
+  <pin id="pin18">
+	<function category="ARDUINO" label="36"/>
+    <function category="PORT" label="PF2"/>
+  </pin>
+  <pin id="pin19">
+	<function category="ARDUINO" label="37"/>
+    <function category="PORT" label="PF3"/>
+  </pin>
+  <pin id="pin20">
+	<function category="ARDUINO" label="14"/>
+    <function category="MVIO" label="PC0"/>
+  </pin>
+  <pin id="pin21">
+	<function category="ARDUINO" label="15"/>
+    <function category="MVIO" label="PC1"/>
+  </pin>
+  <pin id="pin22">
+	<function category="ARDUINO" label="16"/>
+    <function category="MVIO" label="PC2"/>
+  </pin>
+  <pin id="pin23">
+	<function category="ARDUINO" label="17"/>
+    <function category="MVIO" label="PC3"/>
+  </pin>
+  <pin id="pin24">
+    <function category="GND" label="GND"/>
+  </pin>
+  <pin id="pin25">
+	<function category="PORT" label="(PA0)"/>
+    <function category="PER" label="XTALHF1"/>
+  </pin>
+  <pin id="pin26">
+    <function category="PORT" label="(PA1)"/>
+    <function category="PER" label="XTALHF2"/>
+  </pin>
+  <pin id="pin27">
+	<function category="ARDUINO" label="10"/>
+    <function category="PORT" label="PB2"/>
+    <function category="PER" label="SW0"/>
+  </pin>
+  <pin id="pin28">
+	<function category="ARDUINO" label="11"/>
+    <function category="PORT" label="PB3"/>
+    <function category="PER" label="LED0"/>
+  </pin>
+  <pin id="pin29">
+    <function category="PORT" label="(PF0)"/>
+    <function category="PER" label="XTAL32K1"/>
+  </pin>
+  <pin id="pin30">
+    <function category="PORT" label="(PF1)"/>
+    <function category="PER" label="XTAL32K2"/>
+  </pin>
+  <pin id="pin31">
+	<function category="ARDUINO" label="12"/>
+    <function category="PORT" label="PB4"/>
+  </pin>
+  <pin id="pin32">
+	<function category="ARDUINO" label="13"/>
+    <function category="PORT" label="PB5"/>
+  </pin>
+  <pin id="pin33">
+    <function category="GND" label="GND"/>
+  </pin>
+  <pin id="pin34">
+	<function category="ARDUINO" label="18"/>
+    <function category="MVIO" label="PC4"/>
+  </pin>
+  <pin id="pin35">
+	<function category="ARDUINO" label="19"/>
+    <function category="MVIO" label="PC5"/>
+  </pin>
+  <pin id="pin36">
+	<function category="ARDUINO" label="20"/>
+    <function category="MVIO" label="PC6"/>
+  </pin>
+  <pin id="pin37">
+	<function category="ARDUINO" label="21"/>
+    <function category="MVIO" label="PC7"/>
+  </pin>
+  <pin id="pin38">
+	<function category="ARDUINO" label="30"/>
+    <function category="PORT" label="PE0"/>
+  </pin>
+  <pin id="pin39">
+	<function category="ARDUINO" label="31"/>
+    <function category="PORT" label="PE1"/>
+    <function category="OPAMP" label="OP2 INP"/>
+  </pin>
+  <pin id="pin40">
+	<function category="ARDUINO" label="32"/>
+    <function category="PORT" label="PE2"/>
+    <function category="OPAMP" label="OP2 OUT"/>
+  </pin>
+  <pin id="pin41">
+    <function category="PORT" label="PE3"/>
+    <function category="OPAMP" label="OP2 INN"/>
+  </pin>
+  <pin id="pin42">
+    <function category="GND" label="GND"/>
+  </pin>
+  <pin id="pin43">
+    <function category="PORT" label="PD4"/>
+    <function category="ANALOG" label="AIN4"/>
+    <function category="OPAMP" label="OP1 INP"/>
+  </pin>
+  <pin id="pin44">
+    <function category="PORT" label="PD5"/>
+    <function category="ANALOG" label="AIN5"/>
+    <function category="OPAMP" label="OP1 OUT"/>
+  </pin>
+  <pin id="pin45">
+    <function category="PORT" label="PD7"/>
+    <function category="ANALOG" label="AIN7"/>
+    <function category="OPAMP" label="OP1 INN"/>
+  </pin>
+  <pin id="pin46">
+    <function category="PORT" label="PD0"/>
+    <function category="ANALOG" label="AIN0"/>
+    <function category="TIMER" label="TCA0 WO0"/>
+  </pin>
+  <pin id="pin47">
+    <function category="PORT" label="PD1"/>
+    <function category="ANALOG" label="AIN1"/>
+    <function category="OPAMP" label="OP0 INP"/>
+    <function category="TIMER" label="TCA0 WO1"/>
+  </pin>
+  <pin id="pin48">
+    <function category="PORT" label="PD2"/>
+    <function category="ANALOG" label="AIN2"/>
+    <function category="OPAMP" label="OP0 OUT"/>
+    <function category="TIMER" label="TCA0 WO2"/>
+  </pin>
+  <pin id="pin49">
+    <function category="PORT" label="PD3"/>
+    <function category="ANALOG" label="AIN3"/>
+    <function category="OPAMP" label="OP0 INN"/>
+  </pin>
+  <pin id="pin50">
+    <function category="PORT" label="PD6"/>
+    <function category="ANALOG" label="AIN6"/>
+  </pin>
+  <pin id="pin51">
+    <function category="POWER" label="VTG"/>
+  </pin>
+  <pin id="pin52">
+    <function category="GND" label="GND"/>
+  </pin>
+  <pin id="pin53">
+    <function category="DEBUG" label="DBG0"/>
+    <function category="PORT" label="UPDI"/>
+  </pin>
+  <pin id="pin54">
+    <function category="DEBUG" label="DBG3"/>
+    <function category="PORT" label="PF6"/>
+  </pin>
+  <pin id="pin55">
+    <function category="PORT" label="VOFF"/>
+  </pin>
+  <pin id="pin56">
+    <function category="POWER" label="VBUS"/>
+  </pin>
+</pinout>
