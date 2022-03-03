@@ -1,6 +1,6 @@
-// Task 262 testing pins 11-20 for the AVR128DB48
+// Task 266 testing pins 51-56 for the AVR128DB48
 
-int testPin = 14;
+int testPin = 11;
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(testPin, OUTPUT);
