@@ -4,7 +4,7 @@
  * Testing pin maps using Analog read input on Arduino
  */
 
-int outputPin = 34;  // pin to test
+int outputPin = 35;  // pin to test
 int inputPin = 2;    // input pin to read from output pin
 int val = 0;      // variable to store read value
 
