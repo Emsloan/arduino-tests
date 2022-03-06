@@ -3,3 +3,4 @@ continuing
 reviewing python topics
 changing pin name
 changed pin name
+added a new category to a pin
