@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="11.359223300970875cm" preserveAspectRatio="xMidYMid meet" version="1.1" viewBox="100,100,5150,3900" width="15.000000000000002cm">
+  <defs/>
+  <g fill="#ED1B2E" id="outline" stroke="black" stroke-width="5">
+    <path d="M2246 600 m 100 0 h 600 a 100,100 0 0,1 100,100 v 175 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 a 25, 25, 0 0,0 0, 50 v 50 v 125 a 100,100 0 0,1 -100,100 h -600 a 100,100 0 0,1 -100,-100 v -175 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 a 25, 25, 0 0,0 0, -50 v -50 v -125 a 100,100 0 0,1 100,-100"/>
+  </g>
+  <g fill="none" id="hole_lines" stroke="#ff9900" stroke-width="15">
+    <line x1="2813" x2="2813" y1="1600" y2="1700"/>
+    <line x1="2271" x2="2346" y1="900" y2="900"/>
+    <line x1="2946" x2="3021" y1="900" y2="900"/>
+    <line x1="2271" x2="2346" y1="1000" y2="1000"/>
+    <line x1="2946" x2="3021" y1="1000" y2="1000"/>
+    <line x1="2271" x2="2346" y1="1100" y2="1100"/>
+    <line x1="2946" x2="3021" y1="1100" y2="1100"/>
+    <line x1="2271" x2="2346" y1="1200" y2="1200"/>
+    <line x1="2946" x2="3021" y1="1200" y2="1200"/>
+    <line x1="2271" x2="2346" y1="1300" y2="1300"/>
+    <line x1="2946" x2="3021" y1="1300" y2="1300"/>
+    <line x1="2271" x2="2346" y1="1400" y2="1400"/>
+    <line x1="2946" x2="3021" y1="1400" y2="1400"/>
+    <line x1="2271" x2="2346" y1="1500" y2="1500"/>
+    <line x1="2946" x2="3021" y1="1500" y2="1500"/>
+    <line x1="2271" x2="2346" y1="1600" y2="1600"/>
+    <line x1="2946" x2="3021" y1="1600" y2="1600"/>
+    <line x1="2271" x2="2346" y1="1700" y2="1700"/>
+    <line x1="2946" x2="3021" y1="1700" y2="1700"/>
+    <line x1="2271" x2="2346" y1="1800" y2="1800"/>
+    <line x1="2946" x2="3021" y1="1800" y2="1800"/>
+    <line x1="2271" x2="2346" y1="1900" y2="1900"/>
+    <line x1="2946" x2="3021" y1="1900" y2="1900"/>
+    <line x1="2271" x2="2346" y1="2000" y2="2000"/>
+    <line x1="2946" x2="3021" y1="2000" y2="2000"/>
+    <line x1="2271" x2="2346" y1="2100" y2="2100"/>
+    <line x1="2946" x2="3021" y1="2100" y2="2100"/>
+    <line x1="2271" x2="2346" y1="2200" y2="2200"/>
+    <line x1="2946" x2="3021" y1="2200" y2="2200"/>
+    <line x1="2271" x2="2346" y1="2300" y2="2300"/>
+    <line x1="2946" x2="3021" y1="2300" y2="2300"/>
+    <line x1="2271" x2="2346" y1="2400" y2="2400"/>
+    <line x1="2946" x2="3021" y1="2400" y2="2400"/>
+    <line x1="2271" x2="2346" y1="2500" y2="2500"/>
+    <line x1="2946" x2="3021" y1="2500" y2="2500"/>
+    <line x1="2271" x2="2346" y1="2600" y2="2600"/>
+    <line x1="2946" x2="3021" y1="2600" y2="2600"/>
+    <line x1="2271" x2="2346" y1="2700" y2="2700"/>
+    <line x1="2946" x2="3021" y1="2700" y2="2700"/>
+    <line x1="2271" x2="2346" y1="2800" y2="2800"/>
+    <line x1="2946" x2="3021" y1="2800" y2="2800"/>
+    <line x1="2271" x2="2346" y1="2900" y2="2900"/>
+    <line x1="2946" x2="3021" y1="2900" y2="2900"/>
+    <line x1="2271" x2="2346" y1="3000" y2="3000"/>
+    <line x1="2946" x2="3021" y1="3000" y2="3000"/>
+    <line x1="2271" x2="2346" y1="3100" y2="3100"/>
+    <line x1="2946" x2="3021" y1="3100" y2="3100"/>
+    <line x1="2271" x2="2346" y1="3200" y2="3200"/>
+    <line x1="2946" x2="3021" y1="3200" y2="3200"/>
+    <line x1="2271" x2="2346" y1="3300" y2="3300"/>
+    <line x1="2946" x2="3021" y1="3300" y2="3300"/>
+    <line x1="2271" x2="2346" y1="3400" y2="3400"/>
+    <line x1="2946" x2="3021" y1="3400" y2="3400"/>
+    <line x1="2271" x2="2346" y1="3500" y2="3500"/>
+    <line x1="2946" x2="3021" y1="3500" y2="3500"/>
+    <line x1="2271" x2="2346" y1="3600" y2="3600"/>
+    <line x1="2946" x2="3021" y1="3600" y2="3600"/>
+  </g>
+  <g fill="white" id="holes" stroke="#ff9900" stroke-width="15">
+    <circle cx="2346" cy="700" r="70"/>
+    <circle cx="2946" cy="700" r="70"/>
+    <circle cx="2346" cy="3800" r="70"/>
+    <circle cx="2946" cy="3800" r="70"/>
+    <circle cx="2496" cy="1550" r="14" stroke-width="7"/>
+    <circle cx="2546" cy="1550" r="14" stroke-width="7"/>
+    <circle cx="2596" cy="1550" r="14" stroke-width="7"/>
+    <circle cx="2646" cy="1550" r="14" stroke-width="7"/>
+    <circle cx="2696" cy="1550" r="14" stroke-width="7"/>
+    <circle cx="2746" cy="1550" r="14" stroke-width="7"/>
+    <circle cx="2813" cy="1600" r="30"/>
+    <circle cx="2813" cy="1700" r="30"/>
+    <circle cx="2338" cy="900" r="25"/>
+    <circle cx="2954" cy="900" r="25"/>
+    <circle cx="2354" cy="1000" r="25"/>
+    <circle cx="2938" cy="1000" r="25"/>
+    <circle cx="2338" cy="1100" r="25"/>
+    <circle cx="2954" cy="1100" r="25"/>
+    <circle cx="2354" cy="1200" r="25"/>
+    <circle cx="2938" cy="1200" r="25"/>
+    <circle cx="2338" cy="1300" r="25"/>
+    <circle cx="2954" cy="1300" r="25"/>
+    <circle cx="2354" cy="1400" r="25"/>
+    <circle cx="2938" cy="1400" r="25"/>
+    <circle cx="2338" cy="1500" r="25"/>
+    <circle cx="2954" cy="1500" r="25"/>
+    <circle cx="2354" cy="1600" r="25"/>
+    <circle cx="2938" cy="1600" r="25"/>
+    <circle cx="2338" cy="1700" r="25"/>
+    <circle cx="2954" cy="1700" r="25"/>
+    <circle cx="2354" cy="1800" r="25"/>
+    <circle cx="2938" cy="1800" r="25"/>
+    <circle cx="2338" cy="1900" r="25"/>
+    <circle cx="2954" cy="1900" r="25"/>
+    <circle cx="2354" cy="2000" r="25"/>
+    <circle cx="2938" cy="2000" r="25"/>
+    <circle cx="2338" cy="2100" r="25"/>
+    <circle cx="2954" cy="2100" r="25"/>
+    <circle cx="2354" cy="2200" r="25"/>
+    <circle cx="2938" cy="2200" r="25"/>
+    <circle cx="2338" cy="2300" r="25"/>
+    <circle cx="2954" cy="2300" r="25"/>
+    <circle cx="2354" cy="2400" r="25"/>
+    <circle cx="2938" cy="2400" r="25"/>
+    <circle cx="2338" cy="2500" r="25"/>
+    <circle cx="2954" cy="2500" r="25"/>
+    <circle cx="2354" cy="2600" r="25"/>
+    <circle cx="2938" cy="2600" r="25"/>
+    <circle cx="2338" cy="2700" r="25"/>
+    <circle cx="2954" cy="2700" r="25"/>
+    <circle cx="2354" cy="2800" r="25"/>
+    <circle cx="2938" cy="2800" r="25"/>
+    <circle cx="2338" cy="2900" r="25"/>
+    <circle cx="2954" cy="2900" r="25"/>
+    <circle cx="2354" cy="3000" r="25"/>
+    <circle cx="2938" cy="3000" r="25"/>
+    <circle cx="2338" cy="3100" r="25"/>
+    <circle cx="2954" cy="3100" r="25"/>
+    <circle cx="2354" cy="3200" r="25"/>
+    <circle cx="2938" cy="3200" r="25"/>
+    <circle cx="2338" cy="3300" r="25"/>
+    <circle cx="2954" cy="3300" r="25"/>
+    <circle cx="2354" cy="3400" r="25"/>
+    <circle cx="2938" cy="3400" r="25"/>
+    <circle cx="2338" cy="3500" r="25"/>
+    <circle cx="2954" cy="3500" r="25"/>
+    <circle cx="2354" cy="3600" r="25"/>
+    <circle cx="2938" cy="3600" r="25"/>
+  </g>
+  <g fill="#555555" id="components" stroke="black" stroke-width="2">
+    <rect height="225" width="318" x="2487" y="582"/>
+    <rect height="196" width="196" x="2469" y="1018"/>
+    <rect height="244" width="244" x="2524.0" y="3643"/>
+    <circle cx="2646.0" cy="3765.0" fill="white" r="60"/>
+    <rect fill="#FFDD32" height="30" width="60" x="2616.0" y="3506"/>
+    <rect fill="#4FFF0F" height="60" width="30" x="2415" y="839"/>
+    <path d="M2526,1770 m 141.95775600000002, -157.552248 c 2.3891450707545843e-16, -3.90177 3.1701900000000003, -6.8280959999999995 7.07196, -6.8280959999999995 3.657906, 2.239821437240949e-16 7.071954, 2.9263260000000004 7.071954, 6.8280959999999995 -2.3891450707545843e-16, 3.90177 -3.1701900000000003, 6.82809 -7.071954, 6.82809 -3.90177, -2.3891450707545843e-16 -7.07196, -2.9263200000000005 -7.07196, -6.82809 z m 7.07196, 5.852652 c 3.170184, 1.9411778441540764e-16 5.608788, -2.4386039999999993 5.608788, -5.852652 1.9411778441540764e-16, -3.170184 -2.4386039999999993, -5.852652 -5.608788, -5.852652 -3.17019, -1.9411815180944738e-16 -5.608794, 2.4386039999999993 -5.608794, 5.852652 -0.2438640000000002, 3.4140479999999997 2.4386039999999993, 5.852652 5.608794, 5.852652 z m -1.463166, -1.9508819999999998 l -1.2193019999999999, -7.46607145746983e-17 l 4.9276101010824065e-16, -8.047398 l 2.926326, 1.7918578845808385e-16 c 1.9508819999999998, 1.1945706984070932e-16 2.926326, 0.7315800000000001 2.926326, 2.1947460000000003 -8.959271053202208e-17, 1.46316 -0.9754440000000001, 1.9508819999999998 -1.950882, 2.19474 l 2.194746, 3.4140479999999997 l -1.463166, -8.959307792606182e-17 l -2.194746, -3.4140479999999997 l -1.46316, -8.959271053202208e-17 l -2.2398251111813464e-16, 3.6579119999999996 z m 1.219302, -4.389492 c 0.975444, 5.972871861737453e-17 1.950888, 1.1945743723474906e-16 1.950888, -1.2193019999999999 5.972871861737453e-17, -0.975444 -0.9754439999999998, -1.2193019999999999 -1.7070239999999999, -1.2193019999999999 l -1.7070239999999999, -1.0452507388338558e-16 l -1.493214291493966e-16, 2.4386039999999998 z m -21.703584, -4.145628 c -11.461445999999999, -5.364936000000001 -22.191312, -8.047398000000001 -35.847504, -8.291262000000001 -49.5036888, -0.9754380000000029 -90.47225886, 36.579083999999995 -91.203844836, 83.64416999999999 -0.2438580000000005, 8.047398 0.975443975999999, 16.09479 2.926331975999998, 23.654466 l 25.605354060000003, -35.847492 17.314103999999997, 27.068519999999996 c 0.0, 0.0 5.121066, 5.852646 1.2192959999999993, 11.949162 -0.24385800000000002, 0.48772139999999997 -23.410608, 32.4334494 -23.410608, 32.4334494 16.094796, 16.826376 38.7738288, 27.068516076000005 64.3791828, 27.556237476000003 25.117632, 0.48772140000000147 47.308944000000004, -8.778979475999996 63.891462, -24.142195475999998 l -54.38090399999999, -86.0827614 c 0.0, 0.0 8.535120000000001, -11.949167999999998 15.363216000000001, -21.70359 7.315818000000001, -10.486002 14.143914, -3.170183999999999 16.338654, 0.243864000000001 15.850937999999998, 25.117638 45.84578399999999, 72.4265814 45.84578399999999, 72.4265814 l 1.4932363351363507e-17, -0.243864 c 3.1701840000000003, -7.071953399999999 4.63335, -9.2666994 4.877208, -19.2649794 z m -12.924612000000005, 102.9091494 c 0.0, 0.0 -14.387772000000002, 21.215861999999998 -16.094796000000002, 23.166749999999997 -8.778978, 11.949156 -15.363216, -1.9508880000000008 -15.363216, -1.9508880000000008 l -46.08964079999999, -72.4265754 c 0.0, 0.0 8.535120000000001, -11.949167999999998 15.363216000000001, -21.70359 7.315812000000001, -10.486002 14.143912799999999, -3.170183999999999 16.3386528, 0.243858000000001 16.094796, 25.361502 45.84578399999999, 72.67044539999999 45.84578399999999, 72.67044539999999 z " fill="white" stroke="none"/>
+    <polygon points="2646.0,2415.010101267767 2448.010101267767,2613.0 2646.0,2810.989898732233 2843.989898732233,2613.0"/>
+  </g>
+  <g id="text_boxes" stroke-width="2">
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="895"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="860"/>
+    <rect fill="#0070C0" height="10" rx="5" ry="5" stroke="#0070C0" width="604" x="1647" y="995"/>
+    <rect fill="#0070C0" height="80" rx="40" ry="40" stroke="#0070C0" stroke-width="5" width="479" x="1607" y="960"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="1095"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#ED1B2E" stroke-width="5" width="479" x="1607" y="1060"/>
+    <rect fill="#00B0F0" height="80" rx="40" ry="40" stroke="#00B0F0" stroke-width="5" width="479" x="1108" y="1060"/>
+    <rect fill="#CC7212" height="80" rx="40" ry="40" stroke="#CC7212" stroke-width="5" width="479" x="609" y="1060"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="110" y="1060"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="1195"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#ED1B2E" stroke-width="5" width="479" x="1607" y="1160"/>
+    <rect fill="#00B0F0" height="80" rx="40" ry="40" stroke="#00B0F0" stroke-width="5" width="479" x="1108" y="1160"/>
+    <rect fill="#CC7212" height="80" rx="40" ry="40" stroke="#CC7212" stroke-width="5" width="479" x="609" y="1160"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="110" y="1160"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="1295"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#ED1B2E" stroke-width="5" width="479" x="1607" y="1260"/>
+    <rect fill="#CC7212" height="80" rx="40" ry="40" stroke="#CC7212" stroke-width="5" width="479" x="1108" y="1260"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="1260"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="1395"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#ED1B2E" stroke-width="5" width="479" x="1607" y="1360"/>
+    <rect fill="#CC7212" height="80" rx="40" ry="40" stroke="#CC7212" stroke-width="5" width="479" x="1108" y="1360"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="1360"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="1495"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="1460"/>
+    <rect fill="#00B0F0" height="80" rx="40" ry="40" stroke="#00B0F0" stroke-width="5" width="479" x="1108" y="1460"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="1460"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="1595"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="1560"/>
+    <rect fill="#00B0F0" height="80" rx="40" ry="40" stroke="#00B0F0" stroke-width="5" width="479" x="1108" y="1560"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="1560"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="1695"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="1660"/>
+    <rect fill="#6659C1" height="80" rx="40" ry="40" stroke="#6659C1" stroke-width="5" width="479" x="1108" y="1660"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="1660"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="1795"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="1760"/>
+    <rect fill="#6659C1" height="80" rx="40" ry="40" stroke="#6659C1" stroke-width="5" width="479" x="1108" y="1760"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="1760"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="1895"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="1860"/>
+    <rect fill="#D8CC91" height="80" rx="40" ry="40" stroke="#D8CC91" stroke-width="5" width="479" x="1108" y="1860"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="1860"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="1995"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="1960"/>
+    <rect fill="#D8CC91" height="80" rx="40" ry="40" stroke="#D8CC91" stroke-width="5" width="479" x="1108" y="1960"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="1960"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="2095"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="2060"/>
+    <rect fill="#D8CC91" height="80" rx="40" ry="40" stroke="#D8CC91" stroke-width="5" width="479" x="1108" y="2060"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="2060"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="2195"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="2160"/>
+    <rect fill="#D8CC91" height="80" rx="40" ry="40" stroke="#D8CC91" stroke-width="5" width="479" x="1108" y="2160"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="2160"/>
+    <rect fill="#000000" height="10" rx="5" ry="5" stroke="#000000" width="604" x="1647" y="2295"/>
+    <rect fill="#000000" height="80" rx="40" ry="40" stroke="#000000" stroke-width="5" width="479" x="1607" y="2260"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="2395"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="2360"/>
+    <rect fill="#00B0F0" height="80" rx="40" ry="40" stroke="#00B0F0" stroke-width="5" width="479" x="1108" y="2360"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="2360"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="2495"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="2460"/>
+    <rect fill="#00B0F0" height="80" rx="40" ry="40" stroke="#00B0F0" stroke-width="5" width="479" x="1108" y="2460"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="2460"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="2595"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="2560"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="1108" y="2560"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="2695"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="2660"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="1108" y="2660"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="2795"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="2760"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="1108" y="2760"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="2895"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="2860"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="1108" y="2860"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="2995"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="2960"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="1108" y="2960"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="3095"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="1607" y="3060"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="1108" y="3060"/>
+    <rect fill="#000000" height="10" rx="5" ry="5" stroke="#000000" width="604" x="1647" y="3195"/>
+    <rect fill="#000000" height="80" rx="40" ry="40" stroke="#000000" stroke-width="5" width="479" x="1607" y="3160"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="3295"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#ED1B2E" stroke-width="5" width="479" x="1607" y="3260"/>
+    <rect fill="#00B0F0" height="80" rx="40" ry="40" stroke="#00B0F0" stroke-width="5" width="479" x="1108" y="3260"/>
+    <rect fill="#CC7212" height="80" rx="40" ry="40" stroke="#CC7212" stroke-width="5" width="479" x="609" y="3260"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="110" y="3260"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="3395"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#ED1B2E" stroke-width="5" width="479" x="1607" y="3360"/>
+    <rect fill="#00B0F0" height="80" rx="40" ry="40" stroke="#00B0F0" stroke-width="5" width="479" x="1108" y="3360"/>
+    <rect fill="#CC7212" height="80" rx="40" ry="40" stroke="#CC7212" stroke-width="5" width="479" x="609" y="3360"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="110" y="3360"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="3495"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#ED1B2E" stroke-width="5" width="479" x="1607" y="3460"/>
+    <rect fill="#CC7212" height="80" rx="40" ry="40" stroke="#CC7212" stroke-width="5" width="479" x="1108" y="3460"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="3460"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="604" x="1647" y="3595"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#ED1B2E" stroke-width="5" width="479" x="1607" y="3560"/>
+    <rect fill="#CC7212" height="80" rx="40" ry="40" stroke="#CC7212" stroke-width="5" width="479" x="1108" y="3560"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="609" y="3560"/>
+    <rect fill="#FF0000" height="10" rx="5" ry="5" stroke="#FF0000" width="210" x="3041" y="895"/>
+    <rect fill="#FF0000" height="80" rx="40" ry="40" stroke="#FF0000" stroke-width="5" width="479" x="3206" y="860"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="995"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="960"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="1095"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="1060"/>
+    <rect fill="#0070C0" height="80" rx="40" ry="40" stroke="#0070C0" stroke-width="5" width="479" x="3705" y="1060"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="1195"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#ED1B2E" stroke-width="5" width="479" x="3206" y="1160"/>
+    <rect fill="#0070C0" height="80" rx="40" ry="40" stroke="#0070C0" stroke-width="5" width="479" x="3705" y="1160"/>
+    <rect fill="#000000" height="10" rx="5" ry="5" stroke="#000000" width="210" x="3041" y="1295"/>
+    <rect fill="#000000" height="80" rx="40" ry="40" stroke="#000000" stroke-width="5" width="479" x="3206" y="1260"/>
+    <rect fill="#FF0000" height="10" rx="5" ry="5" stroke="#FF0000" width="210" x="3041" y="1395"/>
+    <rect fill="#FF0000" height="80" rx="40" ry="40" stroke="#FF0000" stroke-width="5" width="479" x="3206" y="1360"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="1495"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="1460"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="1460"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="1460"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="1595"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="1560"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="1560"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="1560"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="1695"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="1660"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="1660"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="1660"/>
+    <rect fill="#424242" height="80" rx="40" ry="40" stroke="#424242" stroke-width="5" width="479" x="4703" y="1660"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="1795"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="1760"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="1760"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="1760"/>
+    <rect fill="#424242" height="80" rx="40" ry="40" stroke="#424242" stroke-width="5" width="479" x="4703" y="1760"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="1895"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="1860"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="1860"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="1860"/>
+    <rect fill="#424242" height="80" rx="40" ry="40" stroke="#424242" stroke-width="5" width="479" x="4703" y="1860"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="1995"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="1960"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="1960"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="1960"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="2095"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="2060"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="2060"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="2060"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="2195"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="2160"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="2160"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="2160"/>
+    <rect fill="#000000" height="10" rx="5" ry="5" stroke="#000000" width="210" x="3041" y="2295"/>
+    <rect fill="#000000" height="80" rx="40" ry="40" stroke="#000000" stroke-width="5" width="479" x="3206" y="2260"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="2395"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="2360"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="2360"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="2360"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="2495"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="2460"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="2460"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="2460"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="2595"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="2560"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="2560"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="2560"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="2695"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="2660"/>
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="#7BB81E" stroke-width="5" width="479" x="3705" y="2660"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="4204" y="2660"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="2795"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="2760"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="3705" y="2760"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="2895"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="2860"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="3705" y="2860"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="2995"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="2960"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="3705" y="2960"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="3095"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="3060"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="3705" y="3060"/>
+    <rect fill="#000000" height="10" rx="5" ry="5" stroke="#000000" width="210" x="3041" y="3195"/>
+    <rect fill="#000000" height="80" rx="40" ry="40" stroke="#000000" stroke-width="5" width="479" x="3206" y="3160"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="3295"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="3260"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="3705" y="3260"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="3395"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="3360"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="3705" y="3360"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="3495"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="3460"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="3705" y="3460"/>
+    <rect fill="#CC7212" height="80" rx="40" ry="40" stroke="#CC7212" stroke-width="5" width="479" x="4204" y="3460"/>
+    <rect fill="#A5A5A5" height="10" rx="5" ry="5" stroke="#A5A5A5" width="210" x="3041" y="3595"/>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="#A5A5A5" stroke-width="5" width="479" x="3206" y="3560"/>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="#119E94" stroke-width="5" width="479" x="3705" y="3560"/>
+    <rect fill="#CC7212" height="80" rx="40" ry="40" stroke="#CC7212" stroke-width="5" width="479" x="4204" y="3560"/>
+  </g>
+  <g id="text">
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="50" stroke="none" text-anchor="middle" x="2646.0" y="704">USB</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" stroke="none" text-anchor="middle" x="2567.0" y="1131">DEBUGGER</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="50" stroke="none" text-anchor="middle" x="2646.0" y="3633">SW0</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="50" stroke="none" text-anchor="middle" x="2646.0" y="3496">LED0</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="50" stroke="none" x="2456" y="880">PS LED</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="42.0" stroke="none" text-anchor="middle" x="2646.0" y="2623.5">AVR128DA48</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="900">NC</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="920">NC</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="1000">ID</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="1020">ID</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="1100">PC0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="1120">PC0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="1120">USART1 TX</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="1120">CDC RX</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="349.5" y="1120">D14</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="1200">PC1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="1220">PC1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="1220">USART1 RX</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="1220">CDC TX</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="349.5" y="1220">D15</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="1300">PC6</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="1320">PC6</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="1320">LED0</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="1320">D20</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="1400">PC7</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="1420">PC7</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="1420">SW0</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="1420">D21</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="1500">PA0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="1520">PA0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="1520">USART0 TX</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="1520">D0</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="1600">PA1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="1620">PA1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="1620">USART0 RX</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="1620">D1</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="1700">PC2</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="1720">PC2</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="1720">TWI0 SDA</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="1720">D16</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="1800">PC3</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="1820">PC3</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="1820">TWI0 SCL</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="1820">D17</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="1900">PA4</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="1920">PA4</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="1920">SPI0 MOSI</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="1920">D4</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="2000">PA5</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="2020">PA5</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="2020">SPI0 MISO</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="2020">D5</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="2100">PA6</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="2120">PA6</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="2120">SPI0 SCK</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="2120">D6</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="2200">PA7</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="2220">PA7</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="2220">SPI0 SS</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="2220">D7</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="2300">GND</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="2320">GND</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="2400">PF4</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="2420">PF4</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="2420">USART2 TX</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="2420">D38</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="2500">PF5</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="2520">PF5</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="2520">USART2 RX</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="2520">D39</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="2600">PF2</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="2620">PF2</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="2620">D36</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="2700">PF3</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="2720">PF3</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="2720">D37</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="2800">PB0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="2820">PB0</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="2820">D8</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="2900">PB1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="2920">PB1</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="2920">D9</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="3000">PB2</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="3020">PB2</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="3020">D10</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="3100">PB3</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="3120">PB3</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="3120">D11</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="3200">GND</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="3220">GND</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="3300">PC0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="3320">PC0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="3320">USART1 TX</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="3320">CDC RX</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="349.5" y="3320">D14</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="3400">PC1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="3420">PC1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="3420">USART1 RX</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="3420">CDC TX</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="349.5" y="3420">D15</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2389.0" y="3500">PC6</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="3520">PC6</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="3520">LED0</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="3520">D20</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2413.0" y="3600">PC7</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1846.5" y="3620">PC7</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="1347.5" y="3620">SW0</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="848.5" y="3620">D21</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="900">VBUS</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="920">VBUS</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="1000">VOFF</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="1020">VOFF</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="1100">PF6</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="1120">PF6</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="1120">RSTn</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="1200">UPDI</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="1220">UPDI</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="1220">UPDI</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="1300">GND</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="1320">GND</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="1400">VTG</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="1420">VTG</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="1500">PD7</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="1520">PD7</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="1520">AIN7</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="1520">D29 A7</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="1600">PD6</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="1620">PD6</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="1620">AIN6</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="1620">D28 A6</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="1700">PD2</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="1720">PD2</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="1720">AIN2</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="1720">D24 A2</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4942.5" y="1720">TCA0 WO2</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="1800">PD1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="1820">PD1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="1820">AIN1</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="1820">D23 A1</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4942.5" y="1820">TCA0 WO1</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="1900">PD0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="1920">PD0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="1920">AIN0</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="1920">D22 A0</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4942.5" y="1920">TCA0 WO0</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="2000">PD5</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="2020">PD5</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="2020">AIN5</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="2020">D27 A5</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="2100">PD4</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="2120">PD4</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="2120">AIN4</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="2120">D26 A4</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="2200">PD3</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="2220">PD3</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="2220">AIN3</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="2220">D25 A3</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="2300">GND</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="2320">GND</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="2400">PE3</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="2420">PE3</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="2420">AIN11</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="2420">D33 A11</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="2500">PE2</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="2520">PE2</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="2520">AIN10</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="2520">D32 A10</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="2600">PE1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="2620">PE1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="2620">AIN9</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="2620">D31 A9</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="2700">PE0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="2720">PE0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="2720">AIN8</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="2720">D30 A8</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="2800">PA3</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="2820">PA3</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="2820">D3 I2C0 SCL</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="2900">PA2</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="2920">PA2</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="2920">D2 I2C0 SDA</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="3000">PB5</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="3020">PB5</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="3020">D13</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="3100">PB4</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="3120">PB4</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="3120">D12</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="3200">GND</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="3220">GND</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="3300">PC5</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="3320">PC5</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="3320">D19</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="3400">PC4</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="3420">PC4</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="3420">D18</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2898.0" y="3500">PF1</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="3520">PF1</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="3520">D35</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="3520">XTAL32K2</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="30" glyph-orientation-vertical="90" stroke="none" text-anchor="middle" writing-mode="tb" x="2874.0" y="3600">PF0</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3445.5" y="3620">PF0</text>
+    <text fill="#FFFFFF" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="3944.5" y="3620">D34</text>
+    <text fill="#000000" font-family="Lucida Console" font-size="60" stroke="none" text-anchor="middle" x="4443.5" y="3620">XTAL32K1</text>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="60" stroke="none" text-anchor="middle" x="2646.0" y="1430">DEBUGGER</text>
+    <rect fill="white" height="10" rx="5" ry="5" stroke="none" width="820" x="2236" y="1445"/>
+    <text fill="white" font-family="Arial Rounded MT Bold" font-size="60" stroke="none" text-anchor="middle" x="2646.0" y="1515">AVR128DA48</text>
+  </g>
+  <g id="legend" stroke-width="2">
+    <rect fill="#7BB81E" height="80" rx="40" ry="40" stroke="none" stroke-width="5" width="80" x="3206" y="200"/>
+    <text font-family="Lucida Console" font-size="60" x="3356" y="260">Analog</text>
+    <rect fill="#0070C0" height="80" rx="40" ry="40" stroke="none" stroke-width="5" width="80" x="3206" y="300"/>
+    <text font-family="Lucida Console" font-size="60" x="3356" y="360">Debug</text>
+    <rect fill="#6659C1" height="80" rx="40" ry="40" stroke="none" stroke-width="5" width="80" x="3206" y="400"/>
+    <text font-family="Lucida Console" font-size="60" x="3356" y="460">I2C</text>
+    <rect fill="#D8CC91" height="80" rx="40" ry="40" stroke="none" stroke-width="5" width="80" x="3206" y="500"/>
+    <text font-family="Lucida Console" font-size="60" x="3356" y="560">SPI</text>
+    <rect fill="#00B0F0" height="80" rx="40" ry="40" stroke="none" stroke-width="5" width="80" x="3206" y="600"/>
+    <text font-family="Lucida Console" font-size="60" x="3356" y="660">UART</text>
+    <rect fill="#CC7212" height="80" rx="40" ry="40" stroke="none" stroke-width="5" width="80" x="3206" y="700"/>
+    <text font-family="Lucida Console" font-size="60" x="3356" y="760">Peripheral</text>
+    <rect fill="#A5A5A5" height="80" rx="40" ry="40" stroke="none" stroke-width="5" width="80" x="3806" y="200"/>
+    <text font-family="Lucida Console" font-size="60" x="3956" y="260">Port</text>
+    <rect fill="#424242" height="80" rx="40" ry="40" stroke="none" stroke-width="5" width="80" x="3806" y="300"/>
+    <text font-family="Lucida Console" font-size="60" x="3956" y="360">PWM</text>
+    <rect fill="#FF0000" height="80" rx="40" ry="40" stroke="none" stroke-width="5" width="80" x="3806" y="400"/>
+    <text font-family="Lucida Console" font-size="60" x="3956" y="460">Power</text>
+    <rect fill="#000000" height="80" rx="40" ry="40" stroke="none" stroke-width="5" width="80" x="3806" y="500"/>
+    <text font-family="Lucida Console" font-size="60" x="3956" y="560">Ground</text>
+    <rect fill="#119E94" height="80" rx="40" ry="40" stroke="none" stroke-width="5" width="80" x="3806" y="600"/>
+    <text font-family="Lucida Console" font-size="60" x="3956" y="660">ARDUINO</text>
+    <rect fill="none" height="80" rx="40" ry="40" stroke="#ED1B2E" stroke-width="5" width="80" x="3806" y="700"/>
+    <text font-family="Lucida Console" font-size="60" x="3956" y="760">Shared pin</text>
+  </g>
+  <g id="title" stroke-width="2">
+    <text font-family="Arial Rounded MT Bold" font-size="200" text-anchor="middle" x="1746" y="400">AVR128DA48</text>
+    <text font-family="Arial Rounded MT Bold" font-size="125" text-anchor="middle" x="1746" y="550">Curiosity Nano</text>
+  </g>
+</svg>
