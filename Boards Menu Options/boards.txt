@@ -170,32 +170,54 @@ avrdb.bootloader.BOOTSIZE=0x00
 # Uncomment desired Option, save, and restart the Arduino IDE for selected 
 # option to be shown.
 
+# Uncomment lines with only one '#' 
+
 ########## Option 1 (Defaults Only, No extra menu options) ################
 
-#AVR128DA48
-# Wire Defaults
+##### AVR128DA48 #####
+##### Wire Defaults #####
 
-avrda.build.wire.mode=MORS_BOTH
-avrda.build.wireabr=.wO2
+#avrda.build.wire.mode=MORS_BOTH 
+#avrda.build.wireabr=.wO2 
 
-# printf defaults
+##### printf defaults #####
 
-avrda.build.printf=-Wl,-u,vfprintf -lprintf_min
-avrda.build.printfabr=.pfM
+#avrda.build.printf=-Wl,-u,vfprintf -lprintf_min
+#avrda.build.printfabr=.pfM
 
-#AVR128DB48
-# Wire Defaults
+##### AVR128DB48 #####
+##### Wire Defaults #####
 
-avrdb.build.wire.mode=MORS_BOTH
-avrdb.build.wireabr=.wO2
+#avrdb.build.wire.mode=MORS_BOTH
+#avrdb.build.wireabr=.wO2
 
-# printf defaults
+##### printf defaults #####
 
-avrdb.build.printf=-Wl,-u,vfprintf -lprintf_min
-avrdb.build.printfabr=.pfM
+#avrdb.build.printf=-Wl,-u,vfprintf -lprintf_min
+#avrdb.build.printfabr=.pfM
 
 ################################ End Option 1 ##################################
 
+########## Option 2 (Standard sub-menu options) ################################
+
+##### AVR128DA48 #####
+menu.wire=Wire
+avrda.menu.wire.mors1=1x Wire, Master or Slave (least Flash & RAM)
+avrda.menu.wire.mors1.build.wire.mode=MORS_SINGLE
+avrda.menu.wire.mors1.build.wireabr=.wO
+avrda.menu.wire.mors2=2x Wire, Master or Slave (not available on 28-pin devices)
+avrda.menu.wire.mors2.build.wire.mode=MORS_BOTH
+avrda.menu.wire.mors2.build.wireabr=.wO2
+
+menu.printf=printf()
+avrda.menu.printf.minimal=Minimal, 1.1k flash used (Default)
+avrda.menu.printf.minimal.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrda.menu.printf.minimal.build.printfabr=.pfM
+avrda.menu.printf.default=1.5k flash, no floats
+avrda.menu.printf.full=Full, 2.6k, prints floats
+avrda.menu.printf.full.build.printf=-Wl,-u,vfprintf -lprintf_flt
+avrda.menu.printf.full.build.printfabr=.pfF
 
 
+################################ End Option 2 ##################################
 
