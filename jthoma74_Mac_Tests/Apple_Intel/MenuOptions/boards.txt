@@ -161,3 +161,24 @@ avrdb.bootloader.sutbits=100
 
 avrdb.bootloader.appspm=
 avrdb.bootloader.BOOTSIZE=0x00
+
+### **Move both under Wire menu?
+
+#wire settings
+menu.wire=Wire
+avrdb.menu.wire.mors1=1x Wire, Master or Slave (least Flash & RAM)
+avrdb.menu.wire.mors1.build.wire.mode=MORS_SINGLE
+avrdb.menu.wire.mors1.build.wireabr=.wO
+avrdb.menu.wire.mors2=2x Wire, Master or Slave (not available on 28-pin devices)
+avrdb.menu.wire.mors2.build.wire.mode=MORS_BOTH
+avrdb.menu.wire.mors2.build.wireabr=.wO2
+
+#printf menu options
+menu.printf=printf()
+avrdb.menu.printf.minimal=Minimal, 1.1k flash used (Default)
+avrdb.menu.printf.minimal.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrdb.menu.printf.minimal.build.printfabr=.pfM
+avrdb.menu.printf.default=1.5k flash, no floats
+avrdb.menu.printf.full=Full, 2.6k, prints floats
+avrdb.menu.printf.full.build.printf=-Wl,-u,vfprintf -lprintf_flt
+avrdb.menu.printf.full.build.printfabr=.pfF
