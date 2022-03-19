@@ -128,6 +128,8 @@ avrdb.menu.chip.avr128db48.build.mcu=avr128db48
 avrdb.menu.chip.avr128db48.upload.maximum_size=131072
 avrdb.menu.chip.avr128db48.upload.maximum_data_size=16384
 avrdb.menu.chip.avr128db48.build.variant=48pin-standard
+avrda.menu.chip.avr128db48.build.wire.mode=MORS_SINGLE
+avrda.menu.chip.avr128db48.build.wireabr=.wO
 
 
 # Clock Speed + Source options
