@@ -164,8 +164,6 @@ avrdb.bootloader.sutbits=100
 avrdb.bootloader.appspm=
 avrdb.bootloader.BOOTSIZE=0x00
 
-### **Move both under Wire menu?
-
 #wire settings
 menu.chip=Wire            
 avrdb.menu.chip.avr128db48=AVR128DB48
