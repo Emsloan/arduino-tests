@@ -167,20 +167,20 @@ avrdb.bootloader.BOOTSIZE=0x00
 ### **Move both under Wire menu?
 
 #wire settings
-menu.wire=Wire
-avrdb.menu.wire.mors1=1x Wire, Master or Slave (least Flash & RAM)
-avrdb.menu.wire.mors1.build.wire.mode=MORS_SINGLE
-avrdb.menu.wire.mors1.build.wireabr=.wO
-avrdb.menu.wire.mors2=2x Wire, Master or Slave (not available on 28-pin devices)
-avrdb.menu.wire.mors2.build.wire.mode=MORS_BOTH
-avrdb.menu.wire.mors2.build.wireabr=.wO2
+menu.chip=Wire            
+avrdb.menu.chip.avr128db48=AVR128DB48
+avrdb.menu.chip.avr128db48.build.mcu=avr128db48
+avrdb.menu.chip.avr128db48.upload.maximum_size=131072
+avrdb.menu.chip.avr128db48.upload.maximum_data_size=16384
+avrdb.menu.chip.avr128db48.build.variant=48pin-standard
+avrda.menu.chip.avr128db48.build.wire.mode=MORS_SINGLE
+avrda.menu.chip.avr128db48.build.wireabr=.wO
 
-#printf menu options
-menu.printf=printf()
-avrdb.menu.printf.minimal=Minimal, 1.1k flash used (Default)
-avrdb.menu.printf.minimal.build.printf=-Wl,-u,vfprintf -lprintf_min
-avrdb.menu.printf.minimal.build.printfabr=.pfM
-avrdb.menu.printf.default=1.5k flash, no floats
-avrdb.menu.printf.full=Full, 2.6k, prints floats
-avrdb.menu.printf.full.build.printf=-Wl,-u,vfprintf -lprintf_flt
-avrdb.menu.printf.full.build.printfabr=.pfF
+menu.chip.printf=printf()
+avrdb.menu.chip.printf.minimal=Minimal, 1.1k flash used (Default)
+avrdb.menu.chip.printf.minimal.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrdb.menu.chip.printf.minimal.build.printfabr=.pfM
+avrdb.menu.chip.printf.default=1.5k flash, no floats
+avrdb.menu.chip.printf.full=Full, 2.6k, prints floats
+avrdb.menu.chip.printf.full.build.printf=-Wl,-u,vfprintf -lprintf_flt
+avrdb.menu.chip.printf.full.build.printfabr=.pfF
