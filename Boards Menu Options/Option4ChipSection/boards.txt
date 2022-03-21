@@ -1,0 +1,195 @@
+
+menu.chip=Chip
+
+##############################################################
+
+################################
+#  AVR-DB Settings             #
+################################
+
+
+# Parameters and defaults for DB parts 
+avrdb.upload.tool=avrdude
+avrdb.upload.prog_interlock=
+avrdb.build.board=avrdb
+avrdb.build.core=dxcore
+avrdb.build.f_cpu={build.speed}000000L
+avrdb.build.text_section_start=.text=0x0
+avrdb.build.extra_flags= {bootloader.appspm}
+avrdb.build.export_merged_output=false
+avrdb.build.mcupostfix=
+avrdb.build.printf=
+avrdb.build.wireabr=
+
+# Bootloading parameters and fuses       
+avrdb.bootloader.tool=avrdude
+avrdb.bootloader.WDTCFG=0x00
+avrdb.bootloader.BODCFG=0b{bootloader.bodlevbits}{bootloader.bodmodebits}
+avrdb.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
+avrdb.bootloader.SYSCFG1=0b000{bootloader.mviobits}{bootloader.sutbits}
+#avrdb.bootloader.SYSCFG1=0b00001{bootloader.sutbits}
+avrdb.bootloader.CODESIZE=0x00
+avrdb.bootloader.BOOTSIZE=0x01
+avrdb.bootloader.avrdudestring=
+avrdb.bootloader.pymcuprogstring=-aerase
+
+
+# Exported hex/lst/map names will        #
+# indicate selected options. These       #
+# are only to do that, nothing else      #
+
+avrdb.build.mcupostfix=
+avrdb.build.printfabr=
+avrdb.build.attachabr=
+avrdb.build.wireabr=
+avrdb.build.appspmabr=.spm{bootloader.CODESIZE}
+
+
+# AVR-DB submenu options                     
+
+# Chip (memory and pincount)             
+avrdb.menu.chip.avr128db48=AVR128DB48
+avrdb.menu.chip.avr128db48.build.mcu=avr128db48
+avrdb.menu.chip.avr128db48.upload.maximum_size=131072
+avrdb.menu.chip.avr128db48.upload.maximum_data_size=16384
+avrdb.menu.chip.avr128db48.build.variant=48pin-standard
+
+
+# Clock Speed + Source options
+avrdb.build.f_cpu=24000000L
+avrdb.build.speed=24
+avrdb.build.clocksource=0
+
+# BrownOut Detection (BOD) Options
+avrdb.bootloader.bodlevbits=000
+
+
+# Retain EEPROM (EESAVE)                 
+avrdb.bootloader.eesavebit=1
+
+# Reset pin as GPIO option             
+avrdb.bootloader.resetpinbits=10
+
+# attachInterrupt Mode                   
+avrdb.build.attachmode=-DCORE_ATTACH_ALL
+
+
+# MVIO menu                              
+avrdb.bootloader.mviobits=01
+
+
+# Startup time options  
+# Default set to 8 ms                 
+avrdb.bootloader.sutbits=100
+
+# SPM            
+
+avrdb.bootloader.appspm=
+avrdb.bootloader.BOOTSIZE=0x00
+
+#############
+# Option 4  #
+#############
+########## OPTION 4 (New options under 'Chip' sub-menu) ################################
+
+##### BOARD NAMES #####
+
+avrda.name=AVR128DA48 Curiosity Nano
+avrdb.name=AVR128DB48 Curiosity Nano
+
+
+##### avrda Default settings for all #####
+avrda.upload.tool=avrdude
+avrda.upload.prog_interlock=
+avrda.build.board=avrda
+avrda.build.core=dxcore
+avrda.build.text_section_start=.text=0x0
+avrda.build.export_merged_output=false
+avrda.build.mcupostfix=
+avrda.build.printf=
+avrda.build.printfabr=
+avrda.build.attachabr=
+avrda.build.wireabr=
+avrda.build.appspmabr=.spm{bootloader.CODESIZE}
+avrda.bootloader.tool=avrdude
+avrda.bootloader.WDTCFG=0x00
+avrda.bootloader.BODCFG={bootloader.bodlevbits}{bootloader.bodmodebits}
+avrda.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
+avrda.bootloader.CODESIZE=0x00
+avrda.bootloader.BOOTSIZE=0x01
+avrda.bootloader.avrdudestring=
+avrda.bootloader.pymcuprogstring=-aerase
+avrda.bootloader.appspm=
+avrda.bootloader.BOOTSIZE=0x00
+avrda.build.f_cpu=24000000L
+avrda.build.speed=24
+avrda.bootloader.bodlevbits=000
+avrda.bootloader.eesavebit=1
+avrda.bootloader.resetpinbits=10
+avrda.bootloader.SYSCFG1=0x04
+
+##### Settings for different option Combinations #####
+
+##### 1x Wire, Minimal Float #####
+avrda.menu.chip.128DA48_1=AVR128DA48 (1x Wire, Minimal Float)
+avrda.menu.chip.128DA48_1.build.mcu=avr128da48
+avrda.menu.chip.128DA48_1.upload.maximum_size=131072
+avrda.menu.chip.128DA48_1.upload.maximum_data_size=16384
+avrda.menu.chip.128DA48_1.build.variant=48pin-standard
+avrda.menu.chip.128DA48_1.build.wire.mode=MORS_SINGLE
+avrda.menu.chip.128DA48_1.build.wireabr=.wO
+avrda.menu.chip.128DA48_1.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrda.menu.chip.128DA48_1.build.printfabr=.pfM
+
+##### 2x Wire, Minimal Float #####
+avrda.menu.chip.128DA48_2=AVR128DA48 (2x Wire, Minimal Float)
+avrda.menu.chip.128DA48_2.build.mcu=avr128da48
+avrda.menu.chip.128DA48_2.upload.maximum_size=131072
+avrda.menu.chip.128DA48_2.upload.maximum_data_size=16384
+avrda.menu.chip.128DA48_2.build.variant=48pin-standard
+avrda.menu.chip.128DA48_2.build.wire.mode=MORS_BOTH
+avrda.menu.chip.128DA48_2.build.wireabr=.wO2
+avrda.menu.chip.128DA48_2.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrda.menu.chip.128DA48_2.build.printfabr=.pfM
+
+##### 1x Wire, No Float #####
+avrda.menu.chip.128DA48_3=AVR128DA48 (1x Wire, No Float)
+avrda.menu.chip.128DA48_3.build.mcu=avr128da48
+avrda.menu.chip.128DA48_3.upload.maximum_size=131072
+avrda.menu.chip.128DA48_3.upload.maximum_data_size=16384
+avrda.menu.chip.128DA48_3.build.variant=48pin-standard
+avrda.menu.chip.128DA48_3.build.wire.mode=MORS_SINGLE
+avrda.menu.chip.128DA48_3.build.wireabr=.wO
+
+##### 2x Wire, No Float #####
+avrda.menu.chip.128DA48_4=AVR128DA48 (2x Wire, No Float)
+avrda.menu.chip.128DA48_4.build.mcu=avr128da48
+avrda.menu.chip.128DA48_4.upload.maximum_size=131072
+avrda.menu.chip.128DA48_4.upload.maximum_data_size=16384
+avrda.menu.chip.128DA48_4.build.variant=48pin-standard
+avrda.menu.chip.128DA48_4.build.wire.mode=MORS_BOTH
+avrda.menu.chip.128DA48_4.build.wireabr=.wO2
+
+##### 1x Wire, Full Float #####
+avrda.menu.chip.128DA48_5=AVR128DA48 (1x Wire, Full Float)
+avrda.menu.chip.128DA48_5.build.mcu=avr128da48
+avrda.menu.chip.128DA48_5.upload.maximum_size=131072
+avrda.menu.chip.128DA48_5.upload.maximum_data_size=16384
+avrda.menu.chip.128DA48_5.build.variant=48pin-standard
+avrda.menu.chip.128DA48_5.build.wire.mode=MORS_SINGLE
+avrda.menu.chip.128DA48_5.build.wireabr=.wO
+avrda.menu.chip.128DA48_5.build.printf=-Wl,-u,vfprintf -lprintf_flt
+avrda.menu.chip.128DA48_5.build.printfabr=.pfF
+
+##### 2x Wire, Full Float #####
+avrda.menu.chip.128DA48_6=AVR128DA48 (2x Wire, Full Float)
+avrda.menu.chip.128DA48_6.build.mcu=avr128da48
+avrda.menu.chip.128DA48_6.upload.maximum_size=131072
+avrda.menu.chip.128DA48_6.upload.maximum_data_size=16384
+avrda.menu.chip.128DA48_6.build.variant=48pin-standard
+avrda.menu.chip.128DA48_6.build.wire.mode=MORS_BOTH
+avrda.menu.chip.128DA48_6.build.wireabr=.wO2
+avrda.menu.chip.128DA48_6.build.printf=-Wl,-u,vfprintf -lprintf_flt
+avrda.menu.chip.128DA48_6.build.printfabr=.pfF
+
+################################ End OPTION 4 ##################################

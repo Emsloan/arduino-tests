@@ -1,0 +1,349 @@
+menu.chip=Chip
+
+##############################################################
+
+################################
+#  AVR-DB Settings             #
+################################
+
+
+# Parameters and defaults for DB parts 
+avrdb.upload.tool=avrdude
+avrdb.upload.prog_interlock=
+avrdb.build.board=avrdb
+avrdb.build.core=dxcore
+avrdb.build.f_cpu={build.speed}000000L
+avrdb.build.text_section_start=.text=0x0
+avrdb.build.extra_flags= {bootloader.appspm}
+avrdb.build.export_merged_output=false
+avrdb.build.mcupostfix=
+avrdb.build.printf=
+avrdb.build.wireabr=
+
+# Bootloading parameters and fuses       
+avrdb.bootloader.tool=avrdude
+avrdb.bootloader.WDTCFG=0x00
+avrdb.bootloader.BODCFG=0b{bootloader.bodlevbits}{bootloader.bodmodebits}
+avrdb.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
+avrdb.bootloader.SYSCFG1=0b000{bootloader.mviobits}{bootloader.sutbits}
+#avrdb.bootloader.SYSCFG1=0b00001{bootloader.sutbits}
+avrdb.bootloader.CODESIZE=0x00
+avrdb.bootloader.BOOTSIZE=0x01
+avrdb.bootloader.avrdudestring=
+avrdb.bootloader.pymcuprogstring=-aerase
+
+
+# Exported hex/lst/map names will        #
+# indicate selected options. These       #
+# are only to do that, nothing else      #
+
+avrdb.build.mcupostfix=
+avrdb.build.printfabr=
+avrdb.build.attachabr=
+avrdb.build.wireabr=
+avrdb.build.appspmabr=.spm{bootloader.CODESIZE}
+
+
+# AVR-DB submenu options                     
+
+# Chip (memory and pincount)             
+avrdb.menu.chip.avr128db48=AVR128DB48
+avrdb.menu.chip.avr128db48.build.mcu=avr128db48
+avrdb.menu.chip.avr128db48.upload.maximum_size=131072
+avrdb.menu.chip.avr128db48.upload.maximum_data_size=16384
+avrdb.menu.chip.avr128db48.build.variant=48pin-standard
+
+
+# Clock Speed + Source options
+avrdb.build.f_cpu=24000000L
+avrdb.build.speed=24
+avrdb.build.clocksource=0
+
+# BrownOut Detection (BOD) Options
+avrdb.bootloader.bodlevbits=000
+
+
+# Retain EEPROM (EESAVE)                 
+avrdb.bootloader.eesavebit=1
+
+# Reset pin as GPIO option             
+avrdb.bootloader.resetpinbits=10
+
+# attachInterrupt Mode                   
+avrdb.build.attachmode=-DCORE_ATTACH_ALL
+
+
+# MVIO menu                              
+avrdb.bootloader.mviobits=01
+
+
+# Startup time options  
+# Default set to 8 ms                 
+avrdb.bootloader.sutbits=100
+
+# SPM            
+
+avrdb.bootloader.appspm=
+avrdb.bootloader.BOOTSIZE=0x00
+
+#############
+# Option 3  #
+#############
+########## OPTION 3 (New options under 'Boards' sub-menu) ################################
+
+##### BOARD NAMES #####
+
+avrda1.name=AVR128DA48 (1x Wire, Minimal float)
+avrda2.name=AVR128DA48 (2x Wire, Minimal float)
+avrda3.name=AVR128DA48 (1x Wire, No float)
+avrda4.name=AVR128DA48 (2x Wire, No float)
+avrda5.name=AVR128DA48 (1x Wire, Full float)
+avrda6.name=AVR128DA48 (2x Wire, Full float)
+
+avrdb.name=AVR128DB48 Curiosity Nano
+
+##### Defaults for AVR128DA48 #####
+##### avrda1 settings #####
+avrda1.upload.tool=avrdude
+avrda1.upload.prog_interlock=
+avrda1.build.board=avrda
+avrda1.build.core=dxcore
+avrda1.build.text_section_start=.text=0x0
+avrda1.build.export_merged_output=false
+avrda1.build.mcupostfix=
+avrda1.build.printf=
+avrda1.build.printfabr=
+avrda1.build.attachabr=
+avrda1.build.wireabr=
+avrda1.build.appspmabr=.spm{bootloader.CODESIZE}
+avrda1.bootloader.tool=avrdude
+avrda1.bootloader.WDTCFG=0x00
+avrda1.bootloader.BODCFG={bootloader.bodlevbits}{bootloader.bodmodebits}
+avrda1.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
+avrda1.bootloader.CODESIZE=0x00
+avrda1.bootloader.BOOTSIZE=0x01
+avrda1.bootloader.avrdudestring=
+avrda1.bootloader.pymcuprogstring=-aerase
+avrda1.bootloader.appspm=
+avrda1.bootloader.BOOTSIZE=0x00
+avrda1.menu.chip.128DA48=AVR128DA48
+avrda1.menu.chip.128DA48.build.mcu=avr128da48
+avrda1.menu.chip.128DA48.upload.maximum_size=131072
+avrda1.menu.chip.128DA48.upload.maximum_data_size=16384
+avrda1.menu.chip.128DA48.build.variant=48pin-standard
+avrda1.build.f_cpu=24000000L
+avrda1.build.speed=24
+avrda1.bootloader.bodlevbits=000
+avrda1.bootloader.eesavebit=1
+avrda1.bootloader.resetpinbits=10
+avrda1.bootloader.SYSCFG1=0x04
+
+##### avrda2 settings #####
+avrda2.upload.tool=avrdude
+avrda2.upload.prog_interlock=
+avrda2.build.board=avrda
+avrda2.build.core=dxcore
+avrda2.build.text_section_start=.text=0x0
+avrda2.build.export_merged_output=false
+avrda2.build.mcupostfix=
+avrda2.build.printf=
+avrda2.build.printfabr=
+avrda2.build.attachabr=
+avrda2.build.wireabr=
+avrda2.build.appspmabr=.spm{bootloader.CODESIZE}
+avrda2.bootloader.tool=avrdude
+avrda2.bootloader.WDTCFG=0x00
+avrda2.bootloader.BODCFG={bootloader.bodlevbits}{bootloader.bodmodebits}
+avrda2.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
+avrda2.bootloader.CODESIZE=0x00
+avrda2.bootloader.BOOTSIZE=0x01
+avrda2.bootloader.avrdudestring=
+avrda2.bootloader.pymcuprogstring=-aerase
+avrda2.bootloader.appspm=
+avrda2.bootloader.BOOTSIZE=0x00
+avrda2.menu.chip.128DA48=AVR128DA48
+avrda2.menu.chip.128DA48.build.mcu=avr128da48
+avrda2.menu.chip.128DA48.upload.maximum_size=131072
+avrda2.menu.chip.128DA48.upload.maximum_data_size=16384
+avrda2.menu.chip.128DA48.build.variant=48pin-standard
+avrda2.build.f_cpu=24000000L
+avrda2.build.speed=24
+avrda2.bootloader.bodlevbits=000
+avrda2.bootloader.eesavebit=1
+avrda2.bootloader.resetpinbits=10
+avrda2.bootloader.SYSCFG1=0x04
+
+##### avrda3 settings #####
+avrda3.upload.tool=avrdude
+avrda3.upload.prog_interlock=
+avrda3.build.board=avrda
+avrda3.build.core=dxcore
+avrda3.build.text_section_start=.text=0x0
+avrda3.build.export_merged_output=false
+avrda3.build.mcupostfix=
+avrda3.build.printf=
+avrda3.build.printfabr=
+avrda3.build.attachabr=
+avrda3.build.wireabr=
+avrda3.build.appspmabr=.spm{bootloader.CODESIZE}
+avrda3.bootloader.tool=avrdude
+avrda3.bootloader.WDTCFG=0x00
+avrda3.bootloader.BODCFG={bootloader.bodlevbits}{bootloader.bodmodebits}
+avrda3.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
+avrda3.bootloader.CODESIZE=0x00
+avrda3.bootloader.BOOTSIZE=0x01
+avrda3.bootloader.avrdudestring=
+avrda3.bootloader.pymcuprogstring=-aerase
+avrda3.bootloader.appspm=
+avrda3.bootloader.BOOTSIZE=0x00
+avrda3.menu.chip.128DA48=AVR128DA48
+avrda3.menu.chip.128DA48.build.mcu=avr128da48
+avrda3.menu.chip.128DA48.upload.maximum_size=131072
+avrda3.menu.chip.128DA48.upload.maximum_data_size=16384
+avrda3.menu.chip.128DA48.build.variant=48pin-standard
+avrda3.build.f_cpu=24000000L
+avrda3.build.speed=24
+avrda3.bootloader.bodlevbits=000
+avrda3.bootloader.eesavebit=1
+avrda3.bootloader.resetpinbits=10
+avrda3.bootloader.SYSCFG1=0x04
+
+##### avrda4 settigns #####
+avrda4.upload.tool=avrdude
+avrda4.upload.prog_interlock=
+avrda4.build.board=avrda
+avrda4.build.core=dxcore
+avrda4.build.text_section_start=.text=0x0
+avrda4.build.export_merged_output=false
+avrda4.build.mcupostfix=
+avrda4.build.printf=
+avrda4.build.printfabr=
+avrda4.build.attachabr=
+avrda4.build.wireabr=
+avrda4.build.appspmabr=.spm{bootloader.CODESIZE}
+avrda4.bootloader.tool=avrdude
+avrda4.bootloader.WDTCFG=0x00
+avrda4.bootloader.BODCFG={bootloader.bodlevbits}{bootloader.bodmodebits}
+avrda4.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
+avrda4.bootloader.CODESIZE=0x00
+avrda4.bootloader.BOOTSIZE=0x01
+avrda4.bootloader.avrdudestring=
+avrda4.bootloader.pymcuprogstring=-aerase
+avrda4.bootloader.appspm=
+avrda4.bootloader.BOOTSIZE=0x00
+avrda4.menu.chip.128DA48=AVR128DA48
+avrda4.menu.chip.128DA48.build.mcu=avr128da48
+avrda4.menu.chip.128DA48.upload.maximum_size=131072
+avrda4.menu.chip.128DA48.upload.maximum_data_size=16384
+avrda4.menu.chip.128DA48.build.variant=48pin-standard
+avrda4.build.f_cpu=24000000L
+avrda4.build.speed=24
+avrda4.bootloader.bodlevbits=000
+avrda4.bootloader.eesavebit=1
+avrda4.bootloader.resetpinbits=10
+avrda4.bootloader.SYSCFG1=0x04
+
+##### avrda5 settings #####
+avrda5.upload.tool=avrdude
+avrda5.upload.prog_interlock=
+avrda5.build.board=avrda
+avrda5.build.core=dxcore
+avrda5.build.text_section_start=.text=0x0
+avrda5.build.export_merged_output=false
+avrda5.build.mcupostfix=
+avrda5.build.printf=
+avrda5.build.printfabr=
+avrda5.build.attachabr=
+avrda5.build.wireabr=
+avrda5.build.appspmabr=.spm{bootloader.CODESIZE}
+avrda5.bootloader.tool=avrdude
+avrda5.bootloader.WDTCFG=0x00
+avrda5.bootloader.BODCFG={bootloader.bodlevbits}{bootloader.bodmodebits}
+avrda5.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
+avrda5.bootloader.CODESIZE=0x00
+avrda5.bootloader.BOOTSIZE=0x01
+avrda5.bootloader.avrdudestring=
+avrda5.bootloader.pymcuprogstring=-aerase
+avrda5.bootloader.appspm=
+avrda5.bootloader.BOOTSIZE=0x00
+avrda5.menu.chip.128DA48=AVR128DA48
+avrda5.menu.chip.128DA48.build.mcu=avr128da48
+avrda5.menu.chip.128DA48.upload.maximum_size=131072
+avrda5.menu.chip.128DA48.upload.maximum_data_size=16384
+avrda5.menu.chip.128DA48.build.variant=48pin-standard
+avrda5.build.f_cpu=24000000L
+avrda5.build.speed=24
+avrda5.bootloader.bodlevbits=000
+avrda5.bootloader.eesavebit=1
+avrda5.bootloader.resetpinbits=10
+avrda5.bootloader.SYSCFG1=0x04
+
+##### avrda6 settings #####
+avrda6.upload.tool=avrdude
+avrda6.upload.prog_interlock=
+avrda6.build.board=avrda
+avrda6.build.core=dxcore
+avrda6.build.text_section_start=.text=0x0
+avrda6.build.export_merged_output=false
+avrda6.build.mcupostfix=
+avrda6.build.printf=
+avrda6.build.printfabr=
+avrda6.build.attachabr=
+avrda6.build.wireabr=
+avrda6.build.appspmabr=.spm{bootloader.CODESIZE}
+avrda6.bootloader.tool=avrdude
+avrda6.bootloader.WDTCFG=0x00
+avrda6.bootloader.BODCFG={bootloader.bodlevbits}{bootloader.bodmodebits}
+avrda6.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
+avrda6.bootloader.CODESIZE=0x00
+avrda6.bootloader.BOOTSIZE=0x01
+avrda6.bootloader.avrdudestring=
+avrda6.bootloader.pymcuprogstring=-aerase
+avrda6.bootloader.appspm=
+avrda6.bootloader.BOOTSIZE=0x00
+avrda6.menu.chip.128DA48=AVR128DA48
+avrda6.menu.chip.128DA48.build.mcu=avr128da48
+avrda6.menu.chip.128DA48.upload.maximum_size=131072
+avrda6.menu.chip.128DA48.upload.maximum_data_size=16384
+avrda6.menu.chip.128DA48.build.variant=48pin-standard
+avrda6.build.f_cpu=24000000L
+avrda6.build.speed=24
+avrda6.bootloader.bodlevbits=000
+avrda6.bootloader.eesavebit=1
+avrda6.bootloader.resetpinbits=10
+avrda6.bootloader.SYSCFG1=0x04
+
+##### AVR128DA48 #####
+##### 1x Wire, Minimal Float #####
+avrda1.build.wire.mode=MORS_SINGLE
+avrda1.build.wireabr=.wO
+avrda1.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrda1.build.printfabr=.pfM
+
+##### 2x Wire, Minimal Float #####
+avrda2.build.wire.mode=MORS_BOTH
+avrda2.build.wireabr=.wO2
+avrda2.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrda2.build.printfabr=.pfM
+
+##### 1x Wire, No Float #####
+avrda3.build.wire.mode=MORS_SINGLE
+avrda3.build.wireabr=.wO
+
+##### 2x Wire, No Float #####
+avrda4.build.wire.mode=MORS_BOTH
+avrda4.build.wireabr=.wO2
+
+##### 1x Wire, Full Float #####
+avrda5.build.wire.mode=MORS_SINGLE
+avrda5.build.wireabr=.wO
+avrda5.build.printf=-Wl,-u,vfprintf -lprintf_flt
+avrda5.build.printfabr=.pfF
+
+##### 2x Wire, Full Float #####
+avrda6.build.wire.mode=MORS_BOTH
+avrda6.build.wireabr=.wO2
+avrda6.build.printf=-Wl,-u,vfprintf -lprintf_flt
+avrda6.build.printfabr=.pfF
+
+################################ End OPTION 3 ##################################
