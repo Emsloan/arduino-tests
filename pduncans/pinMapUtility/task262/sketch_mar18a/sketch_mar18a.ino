@@ -1,4 +1,4 @@
-
+int delayT = 1000;
 int pin = 20;
 void setup() {
   // put your setup code here, to run once:
@@ -9,8 +9,8 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(pin, HIGH);
-  delay(100);
+  delay(delayT);
   digitalWrite(pin, LOW);
-  delay(100);
+  delay(delayT);
   Serial1.println("test");
 }
