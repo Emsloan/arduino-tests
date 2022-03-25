@@ -564,4 +564,37 @@ avrda6.build.wireabr=.wO2
 avrda6.build.printf=-Wl,-u,vfprintf -lprintf_flt
 avrda6.build.printfabr=.pfF
 
+##### AVR128DB48 #####
+##### 1x Wire, Minimal Float #####
+avrdb1.build.wire.mode=MORS_SINGLE
+avrdb1.build.wireabr=.wO
+avrdb1.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrdb1.build.printfabr=.pfM
+
+##### 2x Wire, Minimal Float #####
+avrdb2.build.wire.mode=MORS_BOTH
+avrdb2.build.wireabr=.wO2
+avrdb2.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrdb2.build.printfabr=.pfM
+
+##### 1x Wire, No Float #####
+avrdb3.build.wire.mode=MORS_SINGLE
+avrdb3.build.wireabr=.wO
+
+##### 2x Wire, No Float #####
+avrdb4.build.wire.mode=MORS_BOTH
+avrdb4.build.wireabr=.wO2
+
+##### 1x Wire, Full Float #####
+avrdb5.build.wire.mode=MORS_SINGLE
+avrdb5.build.wireabr=.wO
+avrdb5.build.printf=-Wl,-u,vfprintf -lprintf_flt
+avrdb5.build.printfabr=.pfF
+
+##### 2x Wire, Full Float #####
+avrdb6.build.wire.mode=MORS_BOTH
+avrdb6.build.wireabr=.wO2
+avrdb6.build.printf=-Wl,-u,vfprintf -lprintf_flt
+avrdb6.build.printfabr=.pfF
+
 ################################ End OPTION 3 ##################################
