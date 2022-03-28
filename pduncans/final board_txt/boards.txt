@@ -128,41 +128,43 @@ avrda.bootloader.SYSCFG1=0x04
 
 
 ##### Extra options menu setup #####
-menu.extras=Extra Options
+menu.extras=Options
 
-##### 1x Wire, Minimal Float #####
-avrda.menu.extras.extra1=1x Wire, Minimal Float
-avrda.menu.extras.extra1.build.wire.mode=MORS_SINGLE
-avrda.menu.extras.extra1.build.wireabr=.wO
-avrda.menu.extras.extra1.build.printf=-Wl,-u,vfprintf -lprintf_min
-avrda.menu.extras.extra1.build.printfabr=.pfM
-
-##### 2x Wire, Minimal Float #####
-avrda.menu.extras.extra2=2x Wire, Minimal Float
-avrda.menu.extras.extra2.build.wire.mode=MORS_BOTH
-avrda.menu.extras.extra2.build.wireabr=.wO2
-avrda.menu.extras.extra2.build.printf=-Wl,-u,vfprintf -lprintf_min
-avrda.menu.extras.extra2.build.printfabr=.pfM
 
 ##### 1x Wire, No Float #####
-avrda.menu.extras.extra3=1x Wire, No Float
-avrda.menu.extras.extra3.build.wire.mode=MORS_SINGLE
-avrda.menu.extras.extra3.build.wireabr=.wO
+avrda.menu.extras.extra1=1 Wire, Printf float none
+avrda.menu.extras.extra1.build.wire.mode=MORS_SINGLE
+avrda.menu.extras.extra1.build.wireabr=.wO
 
 ##### 2x Wire, No Float #####
-avrda.menu.extras.extra4=2x Wire, No Float
+avrda.menu.extras.extra2=2 Wire, Printf float none
+avrda.menu.extras.extra2.build.wire.mode=MORS_BOTH
+avrda.menu.extras.extra2.build.wireabr=.wO2
+
+##### 1x Wire, Minimal Float #####
+avrda.menu.extras.extra3=1 Wire, Printf float min
+avrda.menu.extras.extra3.build.wire.mode=MORS_SINGLE
+avrda.menu.extras.extra3.build.wireabr=.wO
+avrda.menu.extras.extra3.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrda.menu.extras.extra3.build.printfabr=.pfM
+
+##### 2x Wire, Minimal Float #####
+avrda.menu.extras.extra4=2 Wire, Printf float min
 avrda.menu.extras.extra4.build.wire.mode=MORS_BOTH
 avrda.menu.extras.extra4.build.wireabr=.wO2
+avrda.menu.extras.extra4.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrda.menu.extras.extra4.build.printfabr=.pfM
+
 
 ##### 1x Wire, Full Float #####
-avrda.menu.extras.extra5=1x Wire, Full Float
+avrda.menu.extras.extra5=1 Wire, Printf float full
 avrda.menu.extras.extra5.build.wire.mode=MORS_SINGLE
 avrda.menu.extras.extra5.build.wireabr=.wO
 avrda.menu.extras.extra5.build.printf=-Wl,-u,vfprintf -lprintf_flt
 avrda.menu.extras.extra5.build.printfabr=.pfF
 
 ##### 2x Wire, Full Float #####
-avrda.menu.extras.extra6=2x Wire, Full Float
+avrda.menu.extras.extra6=2 Wire, Printf float full
 avrda.menu.extras.extra6.build.wire.mode=MORS_BOTH
 avrda.menu.extras.extra6.build.wireabr=.wO2
 avrda.menu.extras.extra6.build.printf=-Wl,-u,vfprintf -lprintf_flt
@@ -170,39 +172,39 @@ avrda.menu.extras.extra6.build.printfabr=.pfF
 
 ##### DB48 extra options menu setup #####
 
-##### 1x Wire, Minimal Float #####
-avrdb.menu.extras.extra1=1x Wire, Minimal Float
+##### 1x Wire, No Float #####
+avrdb.menu.extras.extra1=1 Wire, Printf float none
 avrdb.menu.extras.extra1.build.wire.mode=MORS_SINGLE
 avrdb.menu.extras.extra1.build.wireabr=.wO
-avrdb.menu.extras.extra1.build.printf=-Wl,-u,vfprintf -lprintf_min
-avrdb.menu.extras.extra1.build.printfabr=.pfM
-
-##### 2x Wire, Minimal Float #####
-avrdb.menu.extras.extra2=2x Wire, Minimal Float
-avrdb.menu.extras.extra2.build.wire.mode=MORS_BOTH
-avrdb.menu.extras.extra2.build.wireabr=.wO2
-avrdb.menu.extras.extra2.build.printf=-Wl,-u,vfprintf -lprintf_min
-avrdb.menu.extras.extra2.build.printfabr=.pfM
-
-##### 1x Wire, No Float #####
-avrdb.menu.extras.extra3=1x Wire, No Float
-avrdb.menu.extras.extra3.build.wire.mode=MORS_SINGLE
-avrdb.menu.extras.extra3.build.wireabr=.wO
 
 ##### 2x Wire, No Float #####
-avrdb.menu.extras.extra4=2x Wire, No Float
+avrdb.menu.extras.extra2=2 Wire, Printf float none
+avrdb.menu.extras.extra2.build.wire.mode=MORS_BOTH
+avrdb.menu.extras.extra2.build.wireabr=.wO2
+
+##### 1x Wire, Minimal Float #####
+avrdb.menu.extras.extra3=1 Wire, Printf float min
+avrdb.menu.extras.extra3.build.wire.mode=MORS_SINGLE
+avrdb.menu.extras.extra3.build.wireabr=.wO
+avrdb.menu.extras.extra3.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrdb.menu.extras.extra3.build.printfabr=.pfM
+
+##### 2x Wire, Minimal Float #####
+avrdb.menu.extras.extra4=2 Wire, Printf float min
 avrdb.menu.extras.extra4.build.wire.mode=MORS_BOTH
 avrdb.menu.extras.extra4.build.wireabr=.wO2
+avrdb.menu.extras.extra4.build.printf=-Wl,-u,vfprintf -lprintf_min
+avrdb.menu.extras.extra4.build.printfabr=.pfM
 
 ##### 1x Wire, Full Float #####
-avrdb.menu.extras.extra5=1x Wire, Full Float
+avrdb.menu.extras.extra5=1x Wire, Printf float full
 avrdb.menu.extras.extra5.build.wire.mode=MORS_SINGLE
 avrdb.menu.extras.extra5.build.wireabr=.wO
 avrdb.menu.extras.extra5.build.printf=-Wl,-u,vfprintf -lprintf_flt
 avrdb.menu.extras.extra5.build.printfabr=.pfF
 
 ##### 2x Wire, Full Float #####
-avrdb.menu.extras.extra6=2x Wire, Full Float
+avrdb.menu.extras.extra6=2x Wire, Printf float full 
 avrdb.menu.extras.extra6.build.wire.mode=MORS_BOTH
 avrdb.menu.extras.extra6.build.wireabr=.wO2
 avrdb.menu.extras.extra6.build.printf=-Wl,-u,vfprintf -lprintf_flt
