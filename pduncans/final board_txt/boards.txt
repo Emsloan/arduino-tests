@@ -5,6 +5,59 @@ menu.chip=Chip
 avrda.name=AVR128DA48 Curiosity Nano
 avrdb.name=AVR128DB48 Curiosity Nano
 
+#############################
+# Default settings AVR-DA48 #
+#############################
+
+# Bootloading parameters and fuses
+avrda.upload.tool=avrdude
+avrda.upload.prog_interlock=
+avrda.build.board=avrda
+avrda.build.core=dxcore
+avrda.build.text_section_start=.text=0x0
+avrda.build.export_merged_output=false
+avrda.build.mcupostfix=
+avrda.build.printf=
+avrda.build.printfabr=
+avrda.build.attachabr=
+avrda.build.wireabr=
+avrda.build.appspmabr=.spm{bootloader.CODESIZE}
+
+# Bootloading parameters and fuses 
+avrda.bootloader.tool=avrdude
+avrda.bootloader.WDTCFG=0x00
+avrda.bootloader.BODCFG={bootloader.bodlevbits}{bootloader.bodmodebits}
+avrda.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
+avrda.bootloader.CODESIZE=0x00
+avrda.bootloader.BOOTSIZE=0x01
+avrda.bootloader.avrdudestring=
+avrda.bootloader.pymcuprogstring=-aerase
+avrda.bootloader.appspm=
+avrda.bootloader.BOOTSIZE=0x00
+
+# Chip (memory and pincount) 
+avrda.menu.chip.128DA48=AVR128DA48
+avrda.menu.chip.128DA48.build.mcu=avr128da48
+avrda.menu.chip.128DA48.upload.maximum_size=131072
+avrda.menu.chip.128DA48.upload.maximum_data_size=16384
+avrda.menu.chip.128DA48.build.variant=48pin-standard
+
+# Clock Speed + Source options
+avrda.build.f_cpu=24000000L
+avrda.build.speed=24
+
+# BrownOut Detection (BOD) Options
+avrda.bootloader.bodlevbits=000
+
+# Retain EEPROM (EESAVE) 
+avrda.bootloader.eesavebit=1
+
+# Reset pin as GPIO option 
+avrda.bootloader.resetpinbits=10
+
+# Startup time options 
+avrda.bootloader.SYSCFG1=0x04
+
 ################################
 #  AVR-DB Settings             #
 ################################
@@ -35,10 +88,11 @@ avrdb.bootloader.BOOTSIZE=0x01
 avrdb.bootloader.avrdudestring=
 avrdb.bootloader.pymcuprogstring=-aerase
 
-
+##########################################
 # Exported hex/lst/map names will        #
 # indicate selected options. These       #
 # are only to do that, nothing else      #
+##########################################
 
 avrdb.build.mcupostfix=
 avrdb.build.printfabr=
@@ -89,47 +143,10 @@ avrdb.bootloader.sutbits=100
 avrdb.bootloader.appspm=
 avrdb.bootloader.BOOTSIZE=0x00
 
-
-##### Default settings DA48 #####
-
-avrda.upload.tool=avrdude
-avrda.upload.prog_interlock=
-avrda.build.board=avrda
-avrda.build.core=dxcore
-avrda.build.text_section_start=.text=0x0
-avrda.build.export_merged_output=false
-avrda.build.mcupostfix=
-avrda.build.printf=
-avrda.build.printfabr=
-avrda.build.attachabr=
-avrda.build.wireabr=
-avrda.build.appspmabr=.spm{bootloader.CODESIZE}
-avrda.bootloader.tool=avrdude
-avrda.bootloader.WDTCFG=0x00
-avrda.bootloader.BODCFG={bootloader.bodlevbits}{bootloader.bodmodebits}
-avrda.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
-avrda.bootloader.CODESIZE=0x00
-avrda.bootloader.BOOTSIZE=0x01
-avrda.bootloader.avrdudestring=
-avrda.bootloader.pymcuprogstring=-aerase
-avrda.bootloader.appspm=
-avrda.bootloader.BOOTSIZE=0x00
-avrda.menu.chip.128DA48=AVR128DA48
-avrda.menu.chip.128DA48.build.mcu=avr128da48
-avrda.menu.chip.128DA48.upload.maximum_size=131072
-avrda.menu.chip.128DA48.upload.maximum_data_size=16384
-avrda.menu.chip.128DA48.build.variant=48pin-standard
-avrda.build.f_cpu=24000000L
-avrda.build.speed=24
-avrda.bootloader.bodlevbits=000
-avrda.bootloader.eesavebit=1
-avrda.bootloader.resetpinbits=10
-avrda.bootloader.SYSCFG1=0x04
-
-
-##### Extra options menu setup #####
+############################
+# Extra options menu setup #
+############################
 menu.extras=Options
-
 
 ##### 1x Wire, No Float #####
 avrda.menu.extras.extra1=1 Wire, Printf float none
